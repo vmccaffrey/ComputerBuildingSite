@@ -42,19 +42,25 @@ def log_error(e):
     """
     print(e)
 
-directory_intel = 'CPU_Intel\\'
-directory_intel_families = directory_intel + 'Families\\'
-directory_intel_families_cpu = directory_intel_families + 'CPU'
-directory_AMD = 'CPU_AMD\\'
+
+directory_this = os.path.dirname(os.path.abspath(__file__))
+
+directory_intel = os.path.join(directory_this, 'CPU_Intel\\')
+directory_intel_families = os.path.join(directory_intel + 'Families\\')
+directory_intel_families_cpu = os.path.join(directory_intel_families, 'CPU\\')
+
+directory_AMD = os.path.join(directory_this, 'CPU_AMD\\')
+directory_AMD_families = os.path.join(directory_AMD + 'Families\\')
+directory_AMD_families_cpu = os.path.join(directory_AMD_families, 'CPU\\')
 
 try:
     os.makedirs(directory_intel_families_cpu)
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
-		
+
 try:
-    os.makedirs(directory_AMD)
+    os.makedirs(directory_AMD_families_cpu)
 except OSError as e:
     if e.errno != errno.EEXIST:
         raise
@@ -69,11 +75,11 @@ for div in intel_cpu.find_all('div', class_="products processors"):
     for link in div.find_all('a'):
         hyperlink_list.append('https://ark.intel.com' + link.get('href'))
 
-# for link in hyperlink_list:
-#     print(link)
+for link in hyperlink_list:
+    print(link)
 
 
-file_series = Path('CPU_Intel\cpu_families_list.txt')
+file_series = os.path.join(directory_intel, 'cpu_families_list.txt')
 
 file = open(file_series, 'w')
 for link in hyperlink_list:
@@ -89,12 +95,43 @@ for link in hyperlink_list:
         for entry in row.find_all('a'):
             cpu_hyperlinks.append('https://ark.intel.com' + entry.get('href'))
             hyperlink_list_all_cpu.append('https://ark.intel.com' + entry.get('href'))
-            # print(entry.get('href'))
-        temp_file = Path('CPU_Intel\Families\\' + split_array[-1] + '.txt')
+        temp_file = Path(os.path.join(directory_intel_families, split_array[-1] + '.txt'))
         file = open(temp_file, 'w')
         for cpu_link in cpu_hyperlinks:
             file.write(cpu_link + '\n')
         file.close()
 
-# for link in hyperlink_list_all_cpu:
-#
+
+for link in hyperlink_list_all_cpu:
+    intel_link = simple_get(link)
+    soup = BeautifulSoup(intel_link, 'html.parser')
+    # Model
+    for thing in soup.find_all('div', id="tab-blade-1-4"):
+        print(
+            thing.find('ul', class_="specs-list").find('li').find_next_sibling().find('span', class_="value").contents)
+    # Type
+    # Brand
+    # Series
+    for thing in soup.find_all('li', class_="ParentGroup"):
+        print(thing.find('span', class_="value").find('a').contents)
+    # Name
+    for thing in soup.find_all('li', class_="ProcessorNumber"):
+        print(thing.find('span', class_="value").find('span').contents)
+    # Socket
+    for thing in soup.find_all('li', class_="SocketsSupported"):
+        print(thing.find('span', class_="value").find('span').contents)
+    # Core Name
+    for thing in soup.find_all('li', class_="CodeNameText"):
+        print(thing.find('span', class_="value").find('a').contents)
+    # Core Count
+    for thing in soup.find_all('li', class_="CoreCount"):
+        print(thing.find('span', class_="value").find('span').contents)
+    # Thread Count
+    for thing in soup.find_all('li', class_="ThreadCount"):
+        print(thing.find('span', class_="value").find('span').contents)
+    # Speed
+    for thing in soup.find_all('li', class_="ClockSpeed"):
+        print(thing.find('span', class_="value").find('span').contents)
+    # TDP
+    for thing in soup.find_all('li', class_="MaxTDP"):
+        print(thing.find('span', class_="value").find('span').contents)
