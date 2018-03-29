@@ -3,6 +3,7 @@ from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
 from pathlib import Path
+import os, errno
 
 
 def simple_get(url):
@@ -41,6 +42,22 @@ def log_error(e):
     """
     print(e)
 
+directory_intel = 'CPU_Intel\\'
+directory_intel_families = directory_intel + 'Families\\'
+directory_intel_families_cpu = directory_intel_families + 'CPU'
+directory_AMD = 'CPU_AMD\\'
+
+try:
+    os.makedirs(directory_intel_families_cpu)
+except OSError as e:
+    if e.errno != errno.EEXIST:
+        raise
+		
+try:
+    os.makedirs(directory_AMD)
+except OSError as e:
+    if e.errno != errno.EEXIST:
+        raise
 
 hyperlink_list = []
 hyperlink_list_all_cpu = []
