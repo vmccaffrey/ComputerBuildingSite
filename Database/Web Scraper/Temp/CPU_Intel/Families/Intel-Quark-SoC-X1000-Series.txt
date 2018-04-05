@@ -1,0 +1,8 @@
+https://ark.intel.com/products/79084/Intel-Quark-SoC-X1000-16K-Cache-400-MHz
+https://ark.intel.com/products/80900/Intel-Quark-SoC-X1001-16K-Cache-400-MHz
+https://ark.intel.com/products/80901/Intel-Quark-SoC-X1010-16K-Cache-400-MHz
+https://ark.intel.com/products/80902/Intel-Quark-SoC-X1011-16K-Cache-400-MHz
+https://ark.intel.com/products/82485/Intel-Quark-SoC-X1020-16K-Cache-400-MHz
+https://ark.intel.com/products/80903/Intel-Quark-SoC-X1020D-16K-Cache-400-MHz
+https://ark.intel.com/products/80904/Intel-Quark-SoC-X1021-16K-Cache-400-MHz
+https://ark.intel.com/products/81329/Intel-Quark-SoC-X1021D-16K-Cache-400-MHz

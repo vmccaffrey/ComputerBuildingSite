@@ -1,0 +1,14 @@
+https://ark.intel.com/products/97468/Intel-Xeon-Processor-E3-1535M-v6-8M-Cache-3_10-GHz
+https://ark.intel.com/products/97463/Intel-Xeon-Processor-E3-1505M-v6-8M-Cache-3_00-GHz
+https://ark.intel.com/products/98858/Intel-Xeon-Processor-E3-1505L-v6-8M-Cache-2_20-GHz
+https://ark.intel.com/products/122823/Intel-Xeon-Processor-E3-1501L-v6-6M-Cache-up-to-2_90-GHz
+https://ark.intel.com/products/122822/Intel-Xeon-Processor-E3-1501M-v6-6M-Cache-up-to-3_60-GHz
+https://ark.intel.com/products/99978/Intel-Xeon-Processor-E3-1285-v6-8M-Cache-4_10-GHz
+https://ark.intel.com/products/97475/Intel-Xeon-Processor-E3-1280-v6-8M-Cache-3_90-GHz
+https://ark.intel.com/products/97478/Intel-Xeon-Processor-E3-1275-v6-8M-Cache-3_80-GHz
+https://ark.intel.com/products/97479/Intel-Xeon-Processor-E3-1270-v6-8M-Cache-3_80-GHz
+https://ark.intel.com/products/97473/Intel-Xeon-Processor-E3-1245-v6-8M-Cache-3_70-GHz
+https://ark.intel.com/products/97469/Intel-Xeon-Processor-E3-1240-v6-8M-Cache-3_70-GHz
+https://ark.intel.com/products/97474/Intel-Xeon-Processor-E3-1230-v6-8M-Cache-3_50-GHz
+https://ark.intel.com/products/97476/Intel-Xeon-Processor-E3-1225-v6-8M-Cache-3_30-GHz
+https://ark.intel.com/products/97470/Intel-Xeon-Processor-E3-1220-v6-8M-Cache-3_00-GHz

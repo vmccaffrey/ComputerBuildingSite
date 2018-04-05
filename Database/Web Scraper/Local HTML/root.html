@@ -1,0 +1,1255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CPU-World: Microprocessors / CPUs</title>
+<meta name="keywords" content=""><meta name="description" content="Microprocessors/CPUs - list of all CPU families presented on the website.">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="/cpu_world16.css" type="text/css">
+<link rel="search" type="application/opensearchdescription+xml" title="Search CPU-World.com" href="/cw_search.xml">
+<link rel="search" type="application/opensearchdescription+xml" title="Identify CPU" href="/cw_identify.xml">
+</head>
+
+<body>
+<div align='center' class='x_content'><div class='info_content'>
+<table class="nav_table">
+<tr><td colspan=2 height="3"><div style="margin-bottom: 8px"></div></td></tr>
+<tr><td width="210" rowspan="2" class='h_logo'><div><a href="/index.html">CPU-World</a></div></td>
+	<th height="20" class='h_mmenu'><a href="/cpu_news/index.html">News</a> &bull;
+		<a href="/CPUs/index.html">CPUs / Chips</a> &bull;
+		<a href="/benchmarks/">Benchmarks</a> &bull;
+		<a href="/info/index.html">Information</a> &bull;
+		<a href="/forum/">Forum</a> &bull;
+		<a href="/links/index.html">Links</a> &bull;
+		<a href="/about.html">About</a></th>
+</tr>
+<tr> 
+	<td height="20" class='h_smenu'><a href="/CPUs/BSP.html">BSP</a> &bull;
+		<a href="/CPUs/CPU.html">CPU</a> &bull;
+		<a href="/CPUs/FPU.html">FPU</a> &bull;
+		<a href="/CPUs/MCU.html">MCU</a> &bull;
+		<a href="/CPUs/SoC.html">SoC</a> &bull;
+		<a href="/Support/index.html">Other ICs</a> &bull;
+		<a href="/Compare/index.html">Compare CPUs</a> &bull;
+		<a href="/Memorabilia/index.html">Curiosities</a></td>
+</tr>
+</table>
+
+<!--# if expr="$access_level = 0" -->
+<div class='top_search_ad'>
+<div class='top_searchh'><div class='top_searchhi'>
+	<h4 class="side_h4">Search CPU-World</h4>
+	<FORM ACTION='/cgi-bin/SearchSite.pl' METHOD='POST'>
+	<div style='padding: 10px 0 5px 5px'>Search the site / Identify CPU / Quick CPU lookup:</div>
+	<div style='padding: 5px 0 10px 0'><input type=TEXT id='PART_S' name=SEARCH value="" size="15" class='isearch2' onFocus='AS_Focus(this, "/cgi-bin/ajax/parts.fcgi?PART=%PART_S%&amp;ACTION=MATCHFPSAIV&amp;WANT=URL&amp;FIELD=PART_S", 500, null, "URL", null, -5, -26, 1, "1Q")' onBlur='AS_Blur(this)'><input type=SUBMIT name=PROCESS value='Go' class="ibuttonr"></div>
+	</form>
+</div></div>
+
+<div id='AB_W7' class='top_adh'><div class='top_adh2'><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728 x 90 CW top ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6693271402725072"
+     data-ad-slot="3796502091"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>
+<div class='clear'><!-- --></div>
+</div>
+<!--# else --><!--# include file="/include/search.html" --><!--# endif -->
+
+<div id='AB_B'>
+<div class='yhb'><h1>Microprocessors / Central Processing Units (CPUs)</h1></div>
+<div style='padding: 10px 0 10px 10px'><!-- SEARCH_IBEFORE -->
+<!-- SEARCH_IFROM --><div class='side160_div'>
+<h4 class="side_hs">Find Manuf. / Family</h4>
+<div class='side_div2'><div class="side_sect">
+<script type="text/javascript" src="/gt_data.js"></script>
+<script type="text/javascript" src="/gt_code.js"></script>
+<form name="gt_form" action="" method="get" onSubmit="return gotoURL()">
+<div style='line-height: 180%'>
+<div id="gt_l1">Manufacturer:</div>
+<select name="gt_f1" id="gt_f1" size=1 onchange="updateSelect2()" class='isearch' style="width: 165px"><option value=''>--- Select ---</option></select>
+<p>
+<div id="gt_l2">Family:</div>
+<select name="gt_f2" id="gt_f2" size=1 class='isearch' style="width: 165px"><option value=''>--- Select ---</option></select>
+<br><br>
+<input type="submit" name="process" value="Go" class="ibutton">
+<p>
+Select by:<br>
+&nbsp; <input type=radio name="goto_type" value="0" onChange="updateRadio(this)" checked> Manufacturer<br>
+&nbsp; <input type=radio name="goto_type" value="1" onChange="updateRadio(this)"> Family<br>
+</div>
+</form>
+<script type="text/javascript"><!--
+var gt_fields = new Array ('gt_form', 'gt_f1', 'gt_l1', 'Manufacturer', 'gt_f2', 'gt_l2', 'Family');
+updateSelect1 ();
+// --></script>
+</div></div>
+
+<h4 class="side_hs">Match CPUs by features</h4>
+<div class='side_div2'><div class="side_sect">
+<form action='/cgi-bin/ajax/parts.fcgi' autocomplete='off'>
+Find all chips matching manufacturer name, family, codename, model, frequency, cache size and/or socket.
+<p><input type='text' id='PART2' name='PART2' value='' class="isearch" style='width: 165px'>
+<p><input type='submit' name='ACTION' value='Go' class='ibutton'>
+<input type='hidden' name='CGI' value='OUTPUT=W&amp;PART=PART2&amp;ACTION=MATCHFP&amp;WANT=URL&amp;FIELD=PART2'>
+</form>
+</div></div>
+
+<div class='side_div2'>
+<!--# if expr="$access_level = 0" --><div id='AutoSuggestLimit'><!-- --></div><div class='side_ad160'>
+<!-- 160 x 600, CW side ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-6693271402725072"
+     data-ad-slot="9818181501"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!--# endif -->
+</div>
+</div><!-- SEARCH_ITO -->
+<div class='main160_div'><div class='main_div2'>
+<p>The table below lists only original manufacturers of different CPU
+families. To search for all original and second source manufacturers
+of certain family, or for all families for certain manufacturer please
+use the "Find Manuf. / Family" tool on the right.
+<br><br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>AMD</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/29000/index.html'>29000</a> 
+		<td align=CENTER>1988 
+		<td align=CENTER>32 
+		<td>32-bit embedded RISC microprocessor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/29030/index.html'>29030</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>32-bit embedded RISC microprocessor 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/29040/index.html'>29040</a> 
+		<td align=CENTER>199?
+		<td align=CENTER>32 
+		<td>32-bit high-performance embedded RISC microprocessor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/29050/index.html'>29050</a> 
+		<td align=CENTER>1990
+		<td align=CENTER>32 
+		<td>32-bit embedded RISC microprocessor with integrated FPU
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/K5/index.html'>K5</a> 
+		<td align=CENTER>1996 
+		<td align=CENTER>32 
+		<td>Pentium-class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/K6/index.html'>K6</a> 
+		<td align=CENTER>1997 
+		<td align=CENTER>32 
+		<td>Pentium/Pentium II-class processor 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/K6-2/index.html'>K6-2</a> 
+		<td align=CENTER>1998 
+		<td align=CENTER>32 
+		<td>Pentium II-class processor, enhanced version of K6 
+	  </tr>
+	  <tr class="row2">
+		<td><a href='/CPUs/K6-III/index.html'>K6-III</a> 
+		<td align=CENTER>1999 
+		<td align=CENTER>32 
+		<td>Pentium II-class processor, enhanced version 
+		  of K6-2 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/K7/index.html'>K7</a> 
+		<td align=CENTER>1999 
+		<td align=CENTER>32 
+		<td>Pentium III/IV class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/K8/index.html'>K8</a> 
+		<td align=CENTER>2003
+		<td align=CENTER>64 
+		<td>Eighth generation of x86 processors
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/K10/index.html'>K10</a> 
+		<td align=CENTER>2007
+		<td align=CENTER>64 
+		<td>Ninth generation of x86 processors
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Bobcat/index.html'>Bobcat</a> 
+		<td align=CENTER>2011
+		<td align=CENTER>64 
+		<td>First generation of ultra low-power x86 microprocessors
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Bulldozer/index.html'>Bulldozer</a> 
+		<td align=CENTER>2011
+		<td align=CENTER>64 
+		<td>Family of high-performance x86 microprocessors
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Jaguar/index.html'>Jaguar</a> 
+		<td align=CENTER>2013
+		<td align=CENTER>64 
+		<td>Second generation of ultra-low power x86 microprocessors
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Puma/index.html'>Puma</a> 
+		<td align=CENTER>2014
+		<td align=CENTER>64 
+		<td>Third generation of ultra-low power x86 microprocessors
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/AMD_ARM-based/index.html'>ARM-based</a> 
+		<td align=CENTER>2016
+		<td align=CENTER>64
+		<td>Microprocessors and systems on a chip, based on ARM IP cores
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Zen/index.html'>Zen</a> 
+		<td align=CENTER>2017
+		<td align=CENTER>64 
+		<td>High-performance x86 processors
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>ARM</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1">
+		<td><a href='/CPUs/SA-110/index.html'>SA-110</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>32 
+		<td>Low-power embedded StrongARM microprocessor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Cyrix</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1">
+		<td><a href='/CPUs/5x86/index.html'> 5x86</a> 
+		<td align=CENTER>1995
+		<td align=CENTER>32 
+		<td>80486/Pentium class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/6x86/index.html'> 6x86</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>Pentium/Pentium II class processor 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/GX1/index.html'> GX1</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>Highly integrated Pentium/Pentium II class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/MediaGX/index.html'> GXm</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>Highly integrated Pentium/Pentium II class processor 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/MII/index.html'> MII</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>Pentium II class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/MXi/index.html'> MXi</a> 
+		<td align=CENTER>&nbsp; 
+		<td align=CENTER>32 
+		  <td>Enhanced version of MediaGX processor (never released)
+		</tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Digital Equipment Corporation</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/21064/index.html'> 21064</a> 
+		<td align=CENTER>1992
+		<td align=CENTER>64 
+		<td>21064 and 21064A RISC processors 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Ferranti</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1">
+		<td><a href='/CPUs/F100-L/index.html'>F100-L</a> 
+		<td align=CENTER>1976
+		<td align=CENTER>16 
+		<td>Bipolar microprocessor for military applications
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Hitachi</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1">
+		<td><a href='/CPUs/6309/index.html'>6309</a> 
+		<td align=CENTER>198?
+		<td align=CENTER>8
+		<td>CMOS microprocessor, compatible with 6809
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>IDT</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/WinchipC6/index.html'> Winchip C6</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>Pentium class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Winchip2/index.html'> Winchip 
+		  2</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>32 
+		<td>Pentium II class processor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Intel</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/4004/index.html'> 4004</a> 
+		<td align=CENTER>1971 
+		<td align=CENTER>4 
+		<td>First microprocessor. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/8008/index.html'> 8008</a> 
+		<td align=CENTER>1972 
+		<td align=CENTER>8 
+		<td>First 8-bit microprocessor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/4040/index.html'> 4040</a> 
+		<td align=CENTER>1974
+		<td align=CENTER>4 
+		<td>Enhanced version of the Intel 4004 processor. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/8080/index.html'> 8080</a> 
+		<td align=CENTER>1974 
+		<td align=CENTER>8 
+		<td>Successor to Intel 8008 CPU. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/8085/index.html'> 8085</a> 
+		<td align=CENTER>1976 
+		<td align=CENTER>8 
+		<td>Enhanced version of Intel 8080 CPU. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/8086/index.html'> 8086</a> 
+		<td align=CENTER>1978 
+		<td align=CENTER>16 
+		<td>First generation of Intel 80x86 processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/8088/index.html'> 8088</a> 
+		<td align=CENTER>1979 
+		<td align=CENTER>8/16 
+		<td>8 bit (external) version of Intel 8086 CPU. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/80186/index.html'> 80186</a> 
+		<td align=CENTER>1982 
+		<td align=CENTER>16 
+		<td>Next generation of 80x86 processors. Used mostly 
+		  as embedded processor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/80188/index.html'> 80188</a> 
+		<td align=CENTER>1982 
+		<td align=CENTER>8/16 
+		<td>Next generation of 80x86 processors. Used mostly as embedded processor. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/80286/index.html'> 80286</a> 
+		<td align=CENTER>1982 
+		<td align=CENTER>16 
+		<td>Second generation of 80x86 processors:<br>
+		  new instructions, protected mode, support for 16MB of memory. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/80386/index.html'> 80386</a> 
+		<td align=CENTER>1985 
+		<td align=CENTER>32 
+		<td>Third generation of 80x86 processors: 32 bit architecture, new 
+		  processor modes. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/80960/index.html'>80960</a> 
+		<td align=CENTER>1988?
+		<td align=CENTER>32 
+		<td>Embedded 32-bit microprocessor. 
+	  </tr>
+	  <tr class="row1"> 
+		  <td><a href='/CPUs/80376/index.html'> 80376</a> 
+            <td align=CENTER>1989 
+          <td align=CENTER>32 
+		<td>Embedded 32-bit microprocessor based on Intel 80386. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/80486/index.html'> 80486</a> 
+		<td align=CENTER>1989 
+		<td align=CENTER>32 
+		<td>Fourth generation of 80x86 processors: integrated 
+		  FPU, internal clock multiplier. 
+	  </tr>
+	  <tr class="row1">
+		<td><a href='/CPUs/80486u/index.html'> 80486 overdrive</a> 
+		<td align=CENTER>1989
+		<td align=CENTER>32 
+		<td>Overdrive/Upgrade processors for Intel 80486 family. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/80860/index.html'>80860</a> 
+		<td align=CENTER>1989
+		<td align=CENTER>32 
+		<td>Embedded 32-bit microprocessor with integrated 3D graphics.
+	  </tr>
+	  <tr class="row1"> 
+		  <td><a href='/CPUs/Pentium/index.html'>Pentium</a> 
+		  <td align=CENTER>1993 
+		<td align=CENTER>32 
+		<td>Fifth generation of x86 processors: superscalar 
+		  architecture, MMX. 
+	  </tr>
+	  <tr class="row2">
+		<td><a href='/CPUs/Pentium-II/index.html'>Pentium II</a> 
+		<td align=CENTER>1995 
+		<td align=CENTER>32 
+		<td>Sixth generation of x86 processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Celeron/index.html'>Celeron</a> 
+		<td align=CENTER>1998 
+		<td align=CENTER>32 
+		<td>Low-cost version of Pentium II, Pentium III 
+		  and Pentium 4 processors. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Pentium-III/index.html'>Pentium III</a> 
+		  <td align=CENTER>1999 
+		<td align=CENTER>32 
+		<td>Enhanced and faster version of Pentium II. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Pentium_4/index.html'>Pentium 4</a> 
+		<td align=CENTER>2000 
+		  <td align=CENTER>32, 64
+          <td>New generation of Pentium processors. 
+	  </tr>
+	  <tr class="row2">
+		<td><a href='/CPUs/Itanium/index.html'>Itanium</a> 
+		<td align=CENTER>2001 
+		<td align=CENTER>64 
+		<td>High-performance 64-bit microprocessor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Timna/index.html'>Timna</a> 
+		  <td align=CENTER>2001
+		  <td align=CENTER>32 
+		  <td>Low-cost microprocessor with integrated peripherals (never released)
+		</tr>
+	  <tr class="row2">
+		<td><a href='/CPUs/Itanium_2/index.html'>Itanium 2</a> 
+		<td align=CENTER>2002
+		<td align=CENTER>64 
+		<td>High-performance 64-bit microprocessor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Pentium_M/index.html'>Pentium M</a> 
+		<td align=CENTER>2003
+		  <td align=CENTER>32
+          <td>Pentium microprocessor specifically designed for mobile applications
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Celeron_D/index.html'>Celeron D</a> 
+		<td align=CENTER>2004
+		<td align=CENTER>32, 64
+		<td>Low-cost version Pentium 4 desktop processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Celeron_M/index.html'>Celeron M</a> 
+		<td align=CENTER>2004
+		  <td align=CENTER>32
+          <td>Low-cost microprocessor specifically designed for mobile applications
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Pentium_D/index.html'>Pentium D</a> 
+		<td align=CENTER>2005
+		  <td align=CENTER>64
+          <td>Dual-core CPUs based on Pentium 4 architecture. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Pentium_Extreme_Edition/index.html'>Pentium Extreme Edition</a> 
+          <td align=CENTER>2005 
+		<td align=CENTER>64 
+		<td>Dual-core CPUs based on Pentium 4 architecture. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Xeon/index.html'>Xeon</a> 
+		<td align=CENTER>200? 
+		  <td align=CENTER>32, 64
+          <td>High-performance version of Pentium 4 CPU. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_Duo/index.html'>Core Duo</a> 
+		  <td align=CENTER>2006 
+		<td align=CENTER>32 
+		<td>32-bit dual-core microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Core_Solo/index.html'>Core Solo</a> 
+		  <td align=CENTER>2006 
+		<td align=CENTER>32 
+		<td>32-bit single-core microprocessor. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_2/index.html'>Core 2</a> 
+		  <td align=CENTER>2006 
+		<td align=CENTER>64 
+		<td>64-bit microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Pentium_Dual-Core/index.html'>Pentium Dual-Core</a> 
+          <td align=CENTER>2007 
+		<td align=CENTER>32, 64 
+		<td>64-bit low-cost microprocessor. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Celeron_Dual-Core/index.html'>Celeron Dual-Core</a> 
+          <td align=CENTER>2008 
+		<td align=CENTER>32, 64 
+		<td>64-bit low-cost microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Atom/index.html'>Atom</a> 
+          <td align=CENTER>2008 
+		  <td align=CENTER>32, 64 
+          <td>Ultra-low power microprocessor. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_i7/index.html'>Core i7</a> 
+          <td align=CENTER>2008 
+		  <td align=CENTER>32, 64 
+          <td>64-bit microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Core_i5/index.html'>Core i5</a> 
+          <td align=CENTER>2009 
+		  <td align=CENTER>32, 64 
+          <td>64-bit microprocessor. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_i3/index.html'>Core i3</a> 
+          <td align=CENTER>2010 
+		  <td align=CENTER>32, 64 
+          <td>64-bit microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Core_M/index.html'>Core M</a> 
+		  <td align=CENTER>2014 
+		<td align=CENTER>64 
+		<td>Ultra-low power mobile microprocessor. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_m3/index.html'>Core m3</a> 
+		  <td align=CENTER>2015
+		<td align=CENTER>64 
+		<td>Low-end ultra-low power mobile microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Core_m5/index.html'>Core m5</a> 
+		  <td align=CENTER>2015
+		<td align=CENTER>64 
+		<td>Ultra-low power mobile microprocessor. 
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_m7/index.html'>Core m7</a> 
+		  <td align=CENTER>2015
+		<td align=CENTER>64 
+		<td>High performance ultra-low power mobile microprocessor. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Xeon_D/index.html'>Xeon D</a> 
+		  <td align=CENTER>2015
+		<td align=CENTER>64 
+		<td>64-bit low power processor for microservers and embedded markets.
+	  </tr>
+	  <tr class="row1">
+		  <td><a href='/CPUs/Core_i9/index.html'>Core i9</a> 
+          <td align=CENTER>2017
+		  <td align=CENTER>64 
+          <td>High-performance desktop CPU with unlocked clock multiplier. 
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/Xeon_W/index.html'>Xeon W</a> 
+		  <td align=CENTER>2017
+		<td align=CENTER>64 
+		<td>64-bit microprocessor for workstations
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Intersil</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/6100/index.html'> 6100</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>12 
+		<td>CMOS microprocessor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>MIPS Technologies</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/R3000/index.html'> R3000</a> 
+		<td align=CENTER>1988 
+		<td align=CENTER>32 
+		<td>32-bit RISC microprocessor. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/R4000/index.html'> R4000</a> 
+		<td align=CENTER>1991
+		<td align=CENTER>64 
+		<td>RISC processor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/R4400/index.html'> R4400</a> 
+		<td align=CENTER>1993 
+		<td align=CENTER>64 
+		<td>Enhanced version of R4000 RISC processor. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/R4600/index.html'> R4600</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>64 
+		<td>Enhanced version of R4400PC RISC processor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/R5000/index.html'> R5000</a> 
+		<td align=CENTER>1996 
+		<td align=CENTER>64 
+		<td>Super-scalar 64-bit RISC microprocessor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/R10000/index.html'> R10000</a> 
+		<td align=CENTER>199? 
+		<td align=CENTER>64 
+		<td>Super-scalar 64-bit RISC microprocessor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>MOS Technology</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/650x/index.html'> 650x</a> 
+		<td align=CENTER>1975 
+		<td align=CENTER>8 
+		<td>Very popular version of 8 bit processor. 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Motorola</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/6800/index.html'> 6800</a> 
+		<td align=CENTER>1974 
+		<td align=CENTER>8 
+		<td>6800 microprocessor. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/6809/index.html'> 6809</a> 
+		<td align=CENTER>197? 
+		<td align=CENTER>8 
+		<td>Enhanced version of 6800 microprocessor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href="/CPUs/MC14500B/index.html">MC14500B</a> 
+		<td align=CENTER>197? 
+		<td align=CENTER>1 
+		<td>Industrial Control Unit 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/68000/index.html'> 68000</a> 
+		<td align=CENTER>1979 
+		<td align=CENTER>16/32 
+		<td>First generation of Motorola 680x0 series of 
+		  processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/68008/index.html'>68008</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>8/32 
+		<td>First generation of Motorola 680x0 series of processors. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/68010/index.html'>68010</a> 
+		<td align=CENTER>1982 
+		<td align=CENTER>16/32 
+		<td>Second generation of Motorola 680x0 series of 
+		  processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/68012/index.html'>68012</a> 
+		<td align=CENTER>198? 
+		<td align=CENTER>16/32 
+		<td>Second generation of Motorola 680x0 series of processors. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/68020/index.html'>68020</a> 
+		<td align=CENTER>1984 
+		<td align=CENTER>32 
+		<td>Third generation of Motorola 680x0 series of 
+		  processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/68030/index.html'>68030</a> 
+		<td align=CENTER>1987 
+		<td align=CENTER>32 
+		<td>Fourth generation of Motorola 680x0 series of processors. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/68040/index.html'>68040</a> 
+		<td align=CENTER>1991 
+		<td align=CENTER>32 
+		<td>Fifth generation of Motorola 680x0 series of 
+		  processors. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/68060/index.html'>68060</a> 
+		<td align=CENTER>1994 
+		<td align=CENTER>32 
+		<td>Sixth generation of Motorola 680x0 series of processors. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/PowerPC-603/index.html'> PowerPC 
+		  603</a> 
+		<td align=CENTER>1994
+		<td align=CENTER>32 
+		<td>RISC microprocessor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>National Semiconductor</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/PACE/index.html'> PACE</a> 
+		<td align=CENTER>1974 
+		<td align=CENTER>16 
+		<td>16-bit PMOS microprocessor
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/SC-MP/index.html'> SC/MP</a> 
+		<td align=CENTER>1976
+		<td align=CENTER>8 
+		<td>8-bit microprocessor
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/INS8900/index.html'> INS8900</a> 
+		<td align=CENTER>197? 
+		<td align=CENTER>16 
+		<td>16-bit NMOS microprocessor
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/SC-MP_II/index.html'> SC/MP II</a> 
+		<td align=CENTER>1977
+		<td align=CENTER>8 
+		<td>8-bit microprocessor
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/NSC800/index.html'> NSC800</a> 
+		<td align=CENTER>198? 
+		<td align=CENTER>8 
+		<td>Z80 compatible microprocessor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/32016/index.html'> 32016</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>16/32 
+		<td>32-bit microprocessor with 16-bit data bus 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>NEC</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/V20/index.html'> V20</a> 
+		<td align=CENTER>1984 
+		<td align=CENTER>8/16 
+		<td>8088-compatible processor with 8080 emulation mode. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/V30/index.html'> V30</a> 
+		<td align=CENTER>1984 
+		<td align=CENTER>16 
+		<td>8086-compatible processor with 8080 emulation 
+		  mode. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/V40/index.html'> V40</a> 
+		<td align=CENTER>198? 
+		<td align=CENTER>8/16 
+		<td>8088-compatible processor with integrated peripherals and 8080 
+		  emulation mode. 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/V50/index.html'> V50</a> 
+		<td align=CENTER>198? 
+		<td align=CENTER>16 
+		<td>8086-compatible processor with integrated peripherals 
+		  and 8080 emulation mode. 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>NexGen</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Nx586/index.html'> Nx586</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>32 
+		<td>Pentium class processor. 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Philips</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/68070/index.html'> 68070</a> 
+		<td align=CENTER>1988?
+		<td align=CENTER>32 
+		<td>Highly integrated CPU, based on Motorola 68000
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>RCA</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/1802/index.html'> 1802</a> 
+		<td align=CENTER>197? 
+		<td align=CENTER>8 
+		<td>8-bit microprocessor from RCA. Includes 1802, 1804 and 1806. 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Rise Technology</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/MP6/index.html'> MP6</a> 
+		<td align=CENTER>1998
+		<td align=CENTER>32 
+		<td>Pentium class processor. 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Signetics</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/2650/index.html'> 2650</a> 
+		<td align=CENTER>1975?
+		<td align=CENTER>8 
+		<td>8-bit processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/8X300/index.html'> 8X300</a> 
+		<td align=CENTER>197? 
+		<td align=CENTER>8 
+		<td>8-bit RISC-like microprocessor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Sun Microsystems</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/UltraSparc-I/index.html'> UltraSparc I</a> 
+		<td align=CENTER>1995?
+		<td align=CENTER>64 
+		<td>First generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/UltraSparcII/index.html'> UltraSparc II</a> 
+		<td align=CENTER>1997
+		<td align=CENTER>64 
+		<td>Second generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/UltraSparcIIi/index.html'> UltraSparc IIi</a> 
+		<td align=CENTER>1998? 
+		<td align=CENTER>64 
+		<td>Second generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/UltraSparc-IIe/index.html'> UltraSparc IIe</a> 
+		<td align=CENTER>2001?
+		<td align=CENTER>64 
+		<td>Second generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/UltraSparc-III/index.html'> UltraSparc III</a> 
+		<td align=CENTER>2000
+		<td align=CENTER>64 
+		<td>Third generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/UltraSparc-IIIi/index.html'> UltraSparc IIIi</a> 
+		<td align=CENTER>2003? 
+		<td align=CENTER>64 
+		<td>Third generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/UltraSparc-IV/index.html'> UltraSparc IV</a> 
+		<td align=CENTER>2004?
+		<td align=CENTER>64 
+		<td>Fourth generation of UltraSparc processors 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/UltraSparc-IV+/index.html'> UltraSparc IV+</a> 
+		<td align=CENTER>2005? 
+		<td align=CENTER>64 
+		<td>Fourth generation of UltraSparc processors 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Texas Instruments</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/TMS9900/index.html'> TMS9900</a> 
+		<td align=CENTER>1976? 
+		<td align=CENTER>16 
+		<td>16-bit microprocessor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/TMS9980/index.html'> TMS9980</a> 
+		<td align=CENTER>197? 
+		<td align=CENTER>16 
+		<td>16-bit microprocessor with 8-bit data bus
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/TMS9995/index.html'> TMS9995</a> 
+		<td align=CENTER>19??
+		<td align=CENTER>16 
+		<td>Enhanced version of TMS9900 16-bit microprocessor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/TMS99105/index.html'> TMS99105</a> 
+		<td align=CENTER>1981
+		<td align=CENTER>16 
+		<td>Enhanced version of TMS9995 16-bit microprocessor 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/TMS99110/index.html'> TMS99110</a> 
+		<td align=CENTER>1981
+		<td align=CENTER>16 
+		<td>Enhanced version of TMS9995 16-bit microprocessor 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Transmeta</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/TM5600/index.html'> TM5600</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>32 
+		  <td>Low power microprocessor. 
+		</tr>
+		<tr class="row2"> 
+		  <td><a href='/CPUs/TM5800/index.html'> TM5800</a> 
+		  <td align=CENTER>2001
+		  <td align=CENTER>32 
+		  <td>Low power microprocessor. 
+		</tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+		<tr>
+		  <th colspan=4>USSR</th>
+		</tr>
+		<tr class="sh_subhead"> 
+		  <td width="20%">Processor</td>
+		  <td width="10%">Year</td>
+		  <td width="10%">Bus&nbsp;width</td>
+		  <td width="65%">Description</td>
+		</tr>
+		<tr class="row1"> 
+		  <td><a href='/CPUs/USSR-1801/index.html'> 1801</a> 
+		  <td align=CENTER>198? 
+		  <td align=CENTER>16 
+		  <td>DEC (PDP-11) compatible microprocessor 
+		</tr>
+	  </table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>VIA</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/C3/index.html'> Cyrix III (C3)</a> 
+		<td align=CENTER>2000
+		<td align=CENTER>32 
+		<td>Pentium/Pentium II class processor 
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Eden_ESP/index.html'>Eden ESP</a> 
+		<td align=CENTER>19??
+		<td align=CENTER>32 
+		<td>Embedded ultra low-power x86-compatible microprocessor
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/C7-M/index.html'>C7-M</a> 
+		<td align=CENTER>2005
+		<td align=CENTER>32 
+		<td>Low-power mobile microprocessor
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/C7-D/index.html'>C7-D</a> 
+		<td align=CENTER>2006
+		<td align=CENTER>32 
+		<td>Low-power desktop microprocessor
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Nano/index.html'>Nano</a> 
+		<td align=CENTER>2008
+		<td align=CENTER>64
+		<td>Low-power 64-bit microprocessor
+	  </tr>
+	  <tr class="row2"> 
+		<td><a href='/CPUs/Nano_X2/index.html'>Nano X2</a> 
+		<td align=CENTER>2011
+		<td align=CENTER>64
+		<td>Low-power dual-core 64-bit microprocessor
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Western Design Center</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/65816/index.html'> 65816</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>16 
+		<td>16-bit microprocessor with 6502 emulation mode 
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Western Electric</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1">
+		<td><a href='/CPUs/32100/index.html'>WE 32100</a> 
+		<td align=CENTER>1985?
+		<td align=CENTER>32
+		<td>32-bit microprocessor
+	  </tr>
+	  <tr class="row2">
+		  <td><a href='/CPUs/32200/index.html'>WE 32200</a> 
+          <td align=CENTER>198?
+		<td align=CENTER>32
+		<td>32-bit microprocessor
+	  </tr>
+	</table></div>
+	<br>
+	<div class='p_div'><table width='100%' cellspacing=0 cellpadding=0 border=0 class="sh_table">
+	  <tr><th colspan=4>Zilog</th></tr>
+	  <tr class="sh_subhead">
+		<td width="20%">Processor</td>
+		<td width="10%">Year</td>
+		<td width="10%">Bus&nbsp;width</td>
+		<td width="65%">Description</td>
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Z80/index.html'> Z80</a> 
+		<td align=CENTER>1976 
+		<td align=CENTER>8 
+		<td>Improved version of Intel 8080 processor: new instructions. 
+	  </tr>
+	  <tr class="row2">
+		<td><a href='/CPUs/Z800x/index.html'> Z800x</a> 
+		<td align=CENTER>1979?
+		<td align=CENTER>16 
+		<td>16-bit microprocessor. 
+	  </tr>
+	  <tr class="row1"> 
+		<td><a href='/CPUs/Z180/index.html'> Z180</a> 
+		<td align=CENTER>19?? 
+		<td align=CENTER>8 
+		<td>High-integration version of Z80 processor. 
+	  </tr>
+	</table></div>
+<p>
+</div></div><div class='clear'><!-- --></div>
+<!-- SEARCH_IREST -->
+</div>
+
+<table class='ft_table'>
+  <tr><td><a href="/terms_and_conditions.html">Terms and Conditions</a> &middot; <a href="/privacy_policy.html">Privacy Policy</a> &middot; <a href="/contact_us.html">Contact Us</a></td>
+	<td align="right">(c) Copyright 2003 - 2016 Gennadiy Shvets</td>
+  <tr><th colspan=2 height="8"><div style="margin-bottom: 3px"></div></th></tr>
+</table>
+</div>
+</div></div>
+
+<script type="text/javascript" src="/cpu_world17.js"></script></body>
+</html>

@@ -1,0 +1,4 @@
+https://ark.intel.com/products/77918/Intel-Pentium-Processor-1405-v2-6M-Cache-1_40-GHz
+https://ark.intel.com/products/66660/Intel-Pentium-Processor-1405-5M-Cache-1_2-GHz
+https://ark.intel.com/products/93022/Intel-Pentium-Processor-A1020-2M-Cache-up-to-2_66-GHz
+https://ark.intel.com/products/78429/Intel-Pentium-Processor-A1018-1M-Cache-2_10-GHz

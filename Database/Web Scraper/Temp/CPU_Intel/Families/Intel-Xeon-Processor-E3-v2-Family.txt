@@ -1,0 +1,13 @@
+https://ark.intel.com/products/65722/Intel-Xeon-Processor-E3-1290-v2-8M-Cache-3_70-GHz
+https://ark.intel.com/products/65725/Intel-Xeon-Processor-E3-1280-v2-8M-Cache-3_60-GHz
+https://ark.intel.com/products/65726/Intel-Xeon-Processor-E3-1275-v2-8M-Cache-3_50-GHz
+https://ark.intel.com/products/65727/Intel-Xeon-Processor-E3-1270-v2-8M-Cache-3_50-GHz
+https://ark.intel.com/products/65728/Intel-Xeon-Processor-E3-1265L-v2-8M-Cache-2_50-GHz
+https://ark.intel.com/products/65729/Intel-Xeon-Processor-E3-1245-v2-8M-Cache-3_40-GHz
+https://ark.intel.com/products/65730/Intel-Xeon-Processor-E3-1240-v2-8M-Cache-3_40-GHz
+https://ark.intel.com/products/65732/Intel-Xeon-Processor-E3-1230-v2-8M-Cache-3_30-GHz
+https://ark.intel.com/products/65733/Intel-Xeon-Processor-E3-1225-v2-8M-Cache-3_20-GHz
+https://ark.intel.com/products/65734/Intel-Xeon-Processor-E3-1220-v2-8M-Cache-3_10-GHz
+https://ark.intel.com/products/65735/Intel-Xeon-Processor-E3-1220L-v2-3M-Cache-2_30-GHz
+https://ark.intel.com/products/78168/Intel-Xeon-Processor-E3-1125C-v2-8M-Cache-2_50-GHz
+https://ark.intel.com/products/78167/Intel-Xeon-Processor-E3-1105C-v2-8M-Cache-1_80-GHz

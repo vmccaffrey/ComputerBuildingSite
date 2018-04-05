@@ -1,0 +1,12 @@
+https://ark.intel.com/products/84688/Intel-Xeon-Processor-E7-8893-v3-45M-Cache-3_20-GHz
+https://ark.intel.com/products/84686/Intel-Xeon-Processor-E7-8891-v3-45M-Cache-2_80-GHz
+https://ark.intel.com/products/84685/Intel-Xeon-Processor-E7-8890-v3-45M-Cache-2_50-GHz
+https://ark.intel.com/products/84684/Intel-Xeon-Processor-E7-8880L-v3-45M-Cache-2_00-GHz
+https://ark.intel.com/products/84683/Intel-Xeon-Processor-E7-8880-v3-45M-Cache-2_30-GHz
+https://ark.intel.com/products/84682/Intel-Xeon-Processor-E7-8870-v3-45M-Cache-2_10-GHz
+https://ark.intel.com/products/84681/Intel-Xeon-Processor-E7-8867-v3-45M-Cache-2_50-GHz
+https://ark.intel.com/products/84680/Intel-Xeon-Processor-E7-8860-v3-40M-Cache-2_20-GHz
+https://ark.intel.com/products/84679/Intel-Xeon-Processor-E7-4850-v3-35M-Cache-2_20-GHz
+https://ark.intel.com/products/84678/Intel-Xeon-Processor-E7-4830-v3-30M-Cache-2_10-GHz
+https://ark.intel.com/products/84677/Intel-Xeon-Processor-E7-4820-v3-25M-Cache-1_90-GHz
+https://ark.intel.com/products/84676/Intel-Xeon-Processor-E7-4809-v3-20M-Cache-2_00-GHz

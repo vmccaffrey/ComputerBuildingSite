@@ -1,0 +1,5 @@
+https://ark.intel.com/products/88043/Intel-Xeon-Processor-E3-1285L-v4-6M-Cache-3_40-GHz
+https://ark.intel.com/products/88046/Intel-Xeon-Processor-E3-1285-v4-6M-Cache-3_50-GHz
+https://ark.intel.com/products/88097/Intel-Xeon-Processor-E3-1278L-v4-6M-Cache-2_00-GHz
+https://ark.intel.com/products/88041/Intel-Xeon-Processor-E3-1265L-v4-6M-Cache-2_30-GHz
+https://ark.intel.com/products/88096/Intel-Xeon-Processor-E3-1258L-v4-6M-Cache-1_80-GHz

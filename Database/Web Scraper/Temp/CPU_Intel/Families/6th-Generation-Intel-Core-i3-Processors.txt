@@ -1,0 +1,14 @@
+https://ark.intel.com/products/90731/Intel-Core-i3-6300-Processor-4M-Cache-3_80-GHz
+https://ark.intel.com/products/90728/Intel-Core-i3-6300T-Processor-4M-Cache-3_30-GHz
+https://ark.intel.com/products/90733/Intel-Core-i3-6320-Processor-4M-Cache-3_90-GHz
+https://ark.intel.com/products/90611/Intel-Core-i3-6100E-Processor-3M-Cache-2_70-GHz
+https://ark.intel.com/products/89063/Intel-Core-i3-6100H-Processor-3M-Cache-2_70-GHz
+https://ark.intel.com/products/88180/Intel-Core-i3-6100U-Processor-3M-Cache-2_30-GHz
+https://ark.intel.com/products/90612/Intel-Core-i3-6102E-Processor-3M-Cache-1_90-GHz
+https://ark.intel.com/products/96484/Intel-Core-i3-6157U-Processor-3M-Cache-2_40-GHz
+https://ark.intel.com/products/91154/Intel-Core-i3-6167U-Processor-3M-Cache-2_70-GHz
+https://ark.intel.com/products/90729/Intel-Core-i3-6100-Processor-3M-Cache-3_70-GHz
+https://ark.intel.com/products/90734/Intel-Core-i3-6100T-Processor-3M-Cache-3_20-GHz
+https://ark.intel.com/products/88181/Intel-Core-i3-6100TE-Processor-4M-Cache-2_70-GHz
+https://ark.intel.com/products/91157/Intel-Core-i3-6006U-Processor-3M-Cache-2_00-GHz
+https://ark.intel.com/products/93366/Intel-Core-i3-6098P-Processor-3M-Cache-3_60-GHz

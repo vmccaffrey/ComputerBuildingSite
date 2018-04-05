@@ -1,0 +1,9 @@
+https://ark.intel.com/products/78944/Intel-Celeron-Processor-2981U-2M-Cache-1_60-GHz
+https://ark.intel.com/products/76620/Intel-Celeron-Processor-2980U-2M-Cache-1_60-GHz
+https://ark.intel.com/products/81014/Intel-Celeron-Processor-2970M-2M-Cache-2_20-GHz
+https://ark.intel.com/products/78943/Intel-Celeron-Processor-2961Y-2M-Cache-1_10-GHz
+https://ark.intel.com/products/78942/Intel-Celeron-Processor-2957U-2M-Cache-1_40-GHz
+https://ark.intel.com/products/75608/Intel-Celeron-Processor-2955U-2M-Cache-1_40-GHz
+https://ark.intel.com/products/77403/Intel-Celeron-Processor-2950M-2M-Cache-2_00-GHz
+https://ark.intel.com/products/76296/Intel-Celeron-Processor-2002E-2M-Cache-1_50-GHz
+https://ark.intel.com/products/76295/Intel-Celeron-Processor-2000E-2M-Cache-2_20-GHz

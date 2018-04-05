@@ -1,0 +1,6 @@
+https://ark.intel.com/products/71270/Intel-Atom-Processor-S1289-1M-Cache-2_00-GHz
+https://ark.intel.com/products/71271/Intel-Atom-Processor-S1279-1M-Cache-1_60-GHz
+https://ark.intel.com/products/71272/Intel-Atom-Processor-S1269-1M-Cache-1_60-GHz
+https://ark.intel.com/products/71267/Intel-Atom-Processor-S1260-1M-Cache-2_00-GHz
+https://ark.intel.com/products/71268/Intel-Atom-Processor-S1240-1M-Cache-1_60-GHz
+https://ark.intel.com/products/71269/Intel-Atom-Processor-S1220-1M-Cache-1_60-GHz

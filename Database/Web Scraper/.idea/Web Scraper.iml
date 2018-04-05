@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/CPU_AMD" />
       <excludeFolder url="file://$MODULE_DIR$/CPU_Intel" />
+      <excludeFolder url="file://$MODULE_DIR$/Local HTML" />
+      <excludeFolder url="file://$MODULE_DIR$/Temp" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6 (Web Scraper)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

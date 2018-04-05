@@ -1,0 +1,14 @@
+https://ark.intel.com/products/97462/Intel-Core-i7-7920HQ-Processor-8M-Cache-up-to-4_10-GHz
+https://ark.intel.com/products/97496/Intel-Core-i7-7820HQ-Processor-8M-Cache-up-to-3_90-GHz
+https://ark.intel.com/products/97464/Intel-Core-i7-7820HK-Processor-8M-Cache-up-to-3_90-GHz
+https://ark.intel.com/products/97127/Intel-Core-i7-7820EQ-Processor-8M-Cache-up-to-3_70-GHz
+https://ark.intel.com/products/97185/Intel-Core-i7-7700HQ-Processor-6M-Cache-up-to-3_80-GHz
+https://ark.intel.com/products/97128/Intel-Core-i7-7700-Processor-8M-Cache-up-to-4_20-GHz
+https://ark.intel.com/products/97129/Intel-Core-i7-7700K-Processor-8M-Cache-up-to-4_50-GHz
+https://ark.intel.com/products/97122/Intel-Core-i7-7700T-Processor-8M-Cache-up-to-3_80-GHz
+https://ark.intel.com/products/97537/Intel-Core-i7-7660U-Processor-4M-Cache-up-to-4_00-GHz
+https://ark.intel.com/products/97466/Intel-Core-i7-7600U-Processor-4M-Cache-up-to-3_90-GHz
+https://ark.intel.com/products/97541/Intel-Core-i7-7567U-Processor-4M-Cache-up-to-4_00-GHz
+https://ark.intel.com/products/97540/Intel-Core-i7-7560U-Processor-4M-Cache-up-to-3_80-GHz
+https://ark.intel.com/products/95451/Intel-Core-i7-7500U-Processor-4M-Cache-up-to-3_50-GHz-
+https://ark.intel.com/products/95441/Intel-Core-i7-7Y75-Processor-4M-Cache-up-to-3_60-GHz

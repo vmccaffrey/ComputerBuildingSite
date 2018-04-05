@@ -1,0 +1,8 @@
+https://ark.intel.com/products/130409/Intel-Core-i7-8809G-Processor-with-Radeon-RX-Vega-M-GH-graphics-8M-Cache-up-to-4_20-GHz
+https://ark.intel.com/products/130407/Intel-Core-i7-8709G-Processor-with-Radeon-RX-Vega-M-GH-graphics-8M-Cache-up-to-4_10-GHz
+https://ark.intel.com/products/130406/Intel-Core-i7-8706G-Processor-with-Radeon-RX-Vega-M-GL-graphics-8M-Cache-up-to-4_10-GHz
+https://ark.intel.com/products/130411/Intel-Core-i7-8705G-Processor-with-Radeon-RX-Vega-M-GL-graphics-8M-Cache-up-to-4_10-GHz
+https://ark.intel.com/products/126684/Intel-Core-i7-8700K-Processor-12M-Cache-up-to-4_70-GHz
+https://ark.intel.com/products/126686/Intel-Core-i7-8700-Processor-12M-Cache-up-to-4_60-GHz
+https://ark.intel.com/products/124968/Intel-Core-i7-8650U-Processor-8M-Cache-up-to-4_20-GHz
+https://ark.intel.com/products/122589/Intel-Core-i7-8550U-Processor-8M-Cache-up-to-4_00-GHz

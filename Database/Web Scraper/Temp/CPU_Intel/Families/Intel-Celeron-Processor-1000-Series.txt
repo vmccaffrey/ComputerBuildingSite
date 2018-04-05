@@ -1,0 +1,9 @@
+https://ark.intel.com/products/74345/Intel-Celeron-Processor-1047UE-2M-Cache-1_40-GHz
+https://ark.intel.com/products/71995/Intel-Celeron-Processor-1037U-2M-Cache-1_80-GHz
+https://ark.intel.com/products/71994/Intel-Celeron-Processor-1020M-2M-Cache-2_10-GHz
+https://ark.intel.com/products/74344/Intel-Celeron-Processor-1020E-2M-Cache-2_20-GHz
+https://ark.intel.com/products/75102/Intel-Celeron-Processor-1019Y-2M-Cache-1_00-GHz
+https://ark.intel.com/products/75192/Intel-Celeron-Processor-1017U-2M-Cache-1_60-GHz
+https://ark.intel.com/products/72061/Intel-Celeron-Processor-1007U-2M-Cache-1_50-GHz
+https://ark.intel.com/products/75193/Intel-Celeron-Processor-1005M-2M-Cache-1_90-GHz
+https://ark.intel.com/products/72060/Intel-Celeron-Processor-1000M-2M-Cache-1_80-GHz

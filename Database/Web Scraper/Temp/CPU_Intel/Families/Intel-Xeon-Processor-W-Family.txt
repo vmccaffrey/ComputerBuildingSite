@@ -1,0 +1,8 @@
+https://ark.intel.com/products/125036/Intel-Xeon-W-2123-Processor-8_25M-Cache-3_60-GHz
+https://ark.intel.com/products/126708/Intel-Xeon-W-2125-Processor-8_25M-Cache-4_00-GHz
+https://ark.intel.com/products/125040/Intel-Xeon-W-2133-Processor-8_25M-Cache-3_60-GHz
+https://ark.intel.com/products/126709/Intel-Xeon-W-2135-Processor-8_25M-Cache-3_70-GHz
+https://ark.intel.com/products/126707/Intel-Xeon-W-2145-Processor-11M-Cache-3_70-GHz
+https://ark.intel.com/products/125042/Intel-Xeon-W-2155-Processor-13_75M-Cache-3_30-GHz
+https://ark.intel.com/products/130046/Intel-Xeon-W-2175-Processor-19_25M-Cache-2_50-GHz
+https://ark.intel.com/products/126793/Intel-Xeon-W-2195-Processor-24_75M-Cache-2_30-GHz

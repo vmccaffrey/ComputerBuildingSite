@@ -1,0 +1,5 @@
+https://ark.intel.com/products/126685/Intel-Core-i5-8600K-Processor-9M-Cache-up-to-4_30-GHz
+https://ark.intel.com/products/126687/Intel-Core-i5-8400-Processor-9M-Cache-up-to-4_00-GHz
+https://ark.intel.com/products/124969/Intel-Core-i5-8350U-Processor-6M-Cache-up-to-3_60-GHz
+https://ark.intel.com/products/130408/Intel-Core-i5-8305G-Processor-with-Radeon-RX-Vega-M-GL-graphics-6M-Cache-up-to-3_80-GHz
+https://ark.intel.com/products/124967/Intel-Core-i5-8250U-Processor-6M-Cache-up-to-3_40-GHz

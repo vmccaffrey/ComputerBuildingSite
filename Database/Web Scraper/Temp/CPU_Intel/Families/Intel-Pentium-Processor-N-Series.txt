@@ -1,0 +1,7 @@
+https://ark.intel.com/products/95592/Intel-Pentium-Processor-N4200-2M-Cache-up-to-2_5-GHz
+https://ark.intel.com/products/82105/Intel-Pentium-Processor-N3540-2M-Cache-up-to-2_66-GHz
+https://ark.intel.com/products/81074/Intel-Pentium-Processor-N3530-2M-Cache-up-to-2_58-GHz
+https://ark.intel.com/products/79049/Intel-Pentium-Processor-N3520-2M-Cache-up-to-2_42-GHz
+https://ark.intel.com/products/76751/Intel-Pentium-Processor-N3510-2M-Cache-2_00-GHz
+https://ark.intel.com/products/87261/Intel-Pentium-Processor-N3700-2M-Cache-up-to-2_40-GHz
+https://ark.intel.com/products/91830/Intel-Pentium-Processor-N3710-2M-Cache-up-to-2_56-GHz

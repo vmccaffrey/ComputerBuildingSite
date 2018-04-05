@@ -1,0 +1,3 @@
+https://ark.intel.com/products/59683/Intel-Atom-Processor-D2700-1M-Cache-2_13-GHz
+https://ark.intel.com/products/65470/Intel-Atom-Processor-D2550-1M-Cache-1_86-GHz
+https://ark.intel.com/products/59682/Intel-Atom-Processor-D2500-1M-Cache-1_86-GHz
