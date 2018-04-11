@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        
+      
+        
+        /*************************************
+        navigation menu
+        **************************************/
+       body {margin:0;}
+
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+         li.menu {
+            float: left;
+        } 
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        } 
+        
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: #3498DB;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #3498DB;
+        }
+
+        .active {
+            background-color: #2980B9;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        
+        
+        .header {
+            background-color: #f1f1f1;
+            padding-top: 10px;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-bottom:1px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        
+        #sections {
+            list-style-type: none;
+            position: fixed;
+            left: 0%;
+            top: 25%;
+            width: 18em;
+            margin-top: -2.5em;
+            background-color: #333;
+            overflow: hidden;
+}
+        
+        
+        
+        /*************************************
+        body
+        **************************************/
+        
+        .center {
+            margin: auto;
+            width: 45%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 100px;
+            padding-left: 100px;
+            
+            overflow: auto;
+            text-align: justify;
+} 
+        
+        p {
+            font-size: 1.5em;
+        }
+        
+        ul.parts { 
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .image{
+            width: 75%;
+            padding-left:50px;
+            padding-right:50px;
+        }
+        
+        
+        img{transition:transform 0.25s ease;}
+        
+        img:hover {
+            -webkit-transform:scale(2.4);
+            transform:scale(2.4);
+        }
+        </style>
+    </head>
+    <body>
+
+  <!-- Navigation Menu-->
+
+  <div class="header">      
+ <ul class="menu">
+  <li class="menu"><a href="#home">Home</a></li>
+  <li class="menu"><a  href="#pcbuild">PC Builder</a></li>
+  <li class="dropdown">
+     <a class="active" href="javascript:void(0)" class="dropbtn">Guides</a>
+    <div class="dropdown-content">
+        <a href="#">Assembly Guide</a>
+        <a href="#">Staff Build Guides</a>
+        <a href="#">User Build Guides</a>
+    </div>
+</li>
+  <li class="menu"><a href="#individualparts">Individual Parts</a></li>
+  <li class="menu"><a href="#forum">Forum</a></li>
+  <li style="float:right"><a href="#about">Website Name</a></li>
+</ul>
+      
+      <h1>Assembly Guide</h1>
+      
+      </div>
+        
+        <div>
+        <ul id=sections>
+            <li><a href="#s1">Step 1: Gathering Hardware</a>
+            <li><a href="#s2">Step 2: Open the Case</a>
+            <li><a href="#s3">Step 3: Ground Yourself (optional)</a>
+            <li><a href="#s4">Step 4: Install the Motherboard</a>
+            <li><a href="#s5">Step 5: Install the Hard Drive</a>
+            <li><a href="#s6">Step 6: Install the CPU</a>
+            <li><a href="#s7">Step 7: Install the Memory</a>
+            <li><a href="#s8">Step 8: Install the CPU Cooler</a>
+            <li><a href="#s9">Step 9: Install the Power Supply</a>
+            <li><a href="#s10">Step 10: Install the Video Card</a>
+            <li><a href="#s11">Step 11: Connect the Cables</a>
+        </ul>
+        
+        
+        </div>
+        
+        <!-- Body -->
+        
+      <div class="center" >
+      
+      <p><br><br>This guide gives step-by-step instructions on how to assemble a computer. This guide is for a basic computer build and does not cover more complex topics (such as water cooling). The build can take anywhere from 1 to 4 hours.</p>
+      
+      <h1 id="s1">Step 1: Gathering Hardware</h1>
+            
+      
+      <p>The following hardware will be used in this assembly guide:</p>
+          
+          
+          
+      <ul class="parts">
+          <li>CPU</li>
+          <li>CPU Cooler</li>
+          <li>Video Card</li>
+          <li>Motherboard</li>
+          <li>Memory</li>
+          <li>Computer Case</li>
+          <li>Storage</li>
+          <li>Power Supply</li>
+           </ul>
+          
+          <p>You must buy parts that are compatible with each other or the computer won't work. When buying a CPU check its socket type. This must match the corresponding socket of the motherboard. For example, an Intel Core i7-7700K has a Socket LGA 1151, so you will need a motherboard with Socket LGA 1151. The computer case must match the form factor of the motherboard. For example, an ATX motherboard fits in an ATX case. The motherboard must also be compatible with the memory. For example, DDR4 2400 memory must be matched with a motherboard compatible with DDR4 2400 memory. The computer must also have a large enough power supply to handle the pc. The exact amount of power can vary between builds. Most of the power consumption will come from the CPU and the video card. The video card and CPU will have their power requirements listed on their store page. It's also worth noting that some CPUs don't come with a cooler. People who buy a CPU without a cooler or those who want something higher-grade will need to purchase the cooler separately. <br><br> You  will also need the following tools:  </p>
+          
+          <ul class="parts">
+            <li>Phillips-Head Screwdriver</li>
+            <li>Thermal Compound</li>
+            <li>Flashlight (optional)</li>
+            <li>Anti-Static Wrist Strap (optional)</li>
+          </ul>
+          
+          <p>Many CPUs or CPU coolers come with thermal compound, though it may be cheap. A flashlight can help, but is not necessary. An anti-static wrist strap will prevent static electricity. Static electricity can damage the components of the computer, so it is a good idea to take precautionary measures by grounding yourself with an anti-static wrist strap. <br><br><br><br> </p>
+        
+          
+          <p><img class="image" src="computer%20case%20back.jpg" style="float:right; width:184px; height:300px;"></p>
+          
+          <h1 id="s2">Step 2: Open the Case</h1>
+          
+        
+        
+            <p>Open the case by removing the panels on each side. First remove the screws on the back that are holding the side panels in place. Then slide the panel back and lift it up. Now remove any packaging material or parts from inside the case.<br><br><br><br><br><br></p>
+          
+          
+          
+          
+          <h1 id="s3">Step 3: Ground Yourself (optional)</h1>
+          
+          <p><img class="image" src="grounding%20strap.jpg" style="float:right; width:200px; height:150px;"></p>
+          
+          <p>Wrap the grounding strap around your wrist and clip the end to a metal section of the computer case.<br><br><br><br></p>
+          
+         
+          
+          <h1 id="s4">Step 4: Install the Motherboard</h1>
+          
+           <p><img class="image" src="standoffs.jpg" style="float:right; width:333px; height:250px;"></p>
+          
+          <p>First take the I/O bezel plate included with the motherboard and place it in the rectangular opeing in the back of the case. Push it from the inside towards the outside. <br><br> Next install the standoffs that are included with the case. These screw into the motherboard mounting holes in the open area of the case. Check the positions of the screw holes in the motherboard for the exact placement of the standoffs.</p>
+          
+          <p><img class="image" src="motherboard.jpg" style="float:right; width:242px; height:275px;"></p>
+          
+          <p><br>Place the motherboard in the case so that the screw holes match up  with the standoffs and the interface ports match up with the I/O bezel.<br><br> Insert the screws into the motherboard and incrementally tighten each screw a small amount until each screw is in place. <br><br><br><br><br><br></p>
+          
+          <h1 id="s5">Step 5: Install the Hard Drive</h1>
+          
+          <p><img class="image" src="hard%20drive.jpg" style="float:right; width:333px; height:250px;"></p>
+          
+          <p>Locate a 3.5" drive bay to install the hard drive in. Slide the hard drive into place until the screw holes in the case are lined up  with the holes on the side of the hard drive. Once it is lined up, screw the hard drive into place.<br><br><br><br><br></p>
+          
+          <h1 id="s6">Step 6: Install the CPU</h1>
+          
+          <p><img class="image" src="orientation%20mark.jpg" style="float:right; width:333px; height:250px;"></p>
+          
+          <p>Locate the orientation mark that is on one corner of the CPU. The mark is typically an arrow. Lift the small metal lever next to the socket. Next find the orientation mark on the motherboard, line the CPU up with this mark, and gently insert the CPU into the socket. Now push the metal lever down, locking the CPU into place.<br><br><br><br></p>
+          
+          <h1 id="s7">Step 7: Install the Memory</h1>
+          
+          <p><img class="image" src="memory.jpg" style="float:right; width:333px; height:250px;"></p>
+          
+          <p>Insert the memory into the socket next to the CPU. Make sure the notch in the memory matches up with the notch on the motherboard. If not, turn the memory around 180&#176;. Press firmly on both sides of the memory until it snaps into place. Make sure the tabs on the ends lock into place.<br><br><br><br></p>
+          
+          <h1 id="s8">Step 8: Install the CPU Cooler</h1>
+          
+           <p><img class="image" src="cpu.jpg" style="float:right; width:218px; height:250px;"></p>
+          
+          <p>Put a small amount of thermal compound on the CPU. Line the cooler up on top of the CPU. Pull down the locking rod on the cooler to lock it into place. Connect the fan's power cable to the motherboard. Consult the motherboard manual for the exact location.<br><br><br><br><br><br></p>
+          
+          <h1 id="s9">Step 9: Install the Power Supply</h1>
+          
+          <p><img class="image" src="powersupply.jpg" style="float:right; width:300px; height:225px;"></p>
+          
+          <p>The power supply will be placed in the back of the case at the top or bottom, depending on the case. Align the power supply with the mounting holes in the case. Now screw the powersupply into place.<br><br><br><br><br></p>
+          
+          <h1 id="s10">Step 10: Install the Video Card</h1>
+          
+          <p><img class="image" src="pci.jpg" style="float:right; width:305px; height:250px;"></p>
+          
+          <p>Locate the PCI-Ex16 slot below the CPU. Unscrew and remove the adjacent slot covers from the back of the case. Firmly insert the video card into the PCI slot and push down the plastic lock at the end of the slot to lock the video card into place. Now screw the video card into place at the same location where you removed the slot covers. <br><br><br> </p>
+          
+          <h1 id="s11">Step 11: Connect the Cables</h1>
+          
+          <p><img class="image" src="cables.jpg" style="float:right; width:333px; height:250px;"></p>
+          
+          <p>Connect the 24 pin cable and the 4 pin cable from the power supply to the motherboard. Consult the motherboard manual for exact placement. <br><br> Connect the SATA power cable to the hard drive. Connect the SATA interface cable from the motherboard to the hard drive. Consult the motherboard manual for the location of the SATA ports. <br><br> Connect the 6 pin cable from the powersupply to the video card. <br><br>Small data cables connect the front panel devices on the case to the motherboard. Consult the motherboard manual for the placement of these cables.</p>
+        </div>
+      
+      
+      
+
+</body>
+</html>
