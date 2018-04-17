@@ -5,22 +5,22 @@
         
       
         
-        /*************************************
+         /*************************************
         navigation menu
         **************************************/
        body {margin:0;}
 
-        ul {
+        ul.menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333;
         }
-
-        li {
+        
+         li.menu {
             float: left;
-        }
+        } 
 
         li a, .dropbtn {
             display: inline-block;
@@ -28,7 +28,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-        }
+        } 
         
         li a:hover, .dropdown:hover .dropbtn{
             background-color: #3498DB;
@@ -80,6 +80,7 @@
             text-align: left;
             box-sizing: border-box;
         }
+        
         /**************************************
         table for components
         ***************************************/
@@ -87,6 +88,7 @@
         table {
             border-collapse: collapse;
             width: 100%;
+            border: 3px solid #2980B9;
         }
 
         th, td {
@@ -120,19 +122,19 @@
   <!-- Navigation Menu-->
 
   <div class="header">      
- <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a class="active" href="#pcbuild">PC Builder</a></li>
+ <ul class="menu">
+  <li class="menu"><a href="#home">Home</a></li>
+  <li class="menu"><a class="active" href="pc%20build.html">PC Builder</a></li>
   <li class="dropdown">
      <a href="javascript:void(0)" class="dropbtn">Guides</a>
     <div class="dropdown-content">
-        <a href="#">Assembly Guide</a>
-        <a href="#">Staff Build Guides</a>
-        <a href="#">User Build Guides</a>
+        <a href="assembly%20guide/assembly%20guide.html">Assembly Guide</a>
+        <a href="Staff%20Build%20Guides/Staff%20Build%20Guides.html">Staff Build Guides</a>
+        <a href="#">User Builds</a>
     </div>
 </li>
-  <li><a href="#individualparts">Individual Parts</a></li>
-  <li><a href="#forum">Forum</a></li>
+  <li class="menu"><a href="#individualparts">Individual Parts</a></li>
+  <li class="menu"><a href="#forum">Forum</a></li>
   <li style="float:right"><a href="#about">Website Name</a></li>
 </ul>
         
