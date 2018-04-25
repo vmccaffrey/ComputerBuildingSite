@@ -151,18 +151,18 @@ def insert_specs_storage(model, component_type, brand, series, component_name,
 
 
 def insert_specs_psu(model, component_type, brand, series, component_name,
-                     form_factor, efficiency, watts, modular):
+                     dimensions, efficiency, watts, modular):
     try:
         data = connect()
 
         component = get_component_query()
-        query = """insert into specs_psu (model, formFactor, efficiency, watts, modular) 
+        query = """insert into specs_psu (model, dimensions, efficiency, watts, modular) 
                     values (%s, %s, %s, %s, %s)"""
 
         cur = data.cursor()
 
         cur.execute(component, (model, component_type, brand, series, component_name))
-        cur.execute(query, (model, form_factor, efficiency, watts, modular))
+        cur.execute(query, (model, dimensions, efficiency, watts, modular))
 
         data.commit()
         data.close()
@@ -238,18 +238,18 @@ def insert_specs_gpu(model, component_type, brand, series, component_name,
 
 
 def insert_specs_case(model, component_type, brand, series, component_name,
-                      bay_hdd, bay_ssd, expansion_slots, height, width, depth):
+                      bay_hdd, bay_ssd, expansion_slots, dimensions, mobo_compatibility):
     try:
         data = connect()
 
         component = get_component_query()
-        query = """insert into specs_case (model, bayHDD, baySSD, expansionSlots, height, width, depth) 
-                    values (%s, %s, %s, %s, %s, %s, %s)"""
+        query = """insert into specs_case (model, bayHDD, baySSD, expansionSlots, dimensions, moboCompatibility) 
+                    values (%s, %s, %s, %s, %s, %s)"""
 
         cur = data.cursor()
 
         cur.execute(component, (model, component_type, brand, series, component_name))
-        cur.execute(query, (model, bay_hdd, bay_ssd, expansion_slots, height, width, depth))
+        cur.execute(query, (model, bay_hdd, bay_ssd, expansion_slots, dimensions, mobo_compatibility))
 
         data.commit()
         data.close()
@@ -303,81 +303,3 @@ def restart_tables():
         print(e)
     except MySQLdb.DatabaseError as e:
         print(e)
-
-
-# def test_insert(thing0, thing1, thing2, thing3, link0, link1, link2, link3):
-#     try:
-#         data = connect()
-#
-#         thing = """insert into test (thing0, thing1, thing2, thing3)
-#                     values (%s, %s, %s, %s)"""
-#         link = """insert into test_linked (linkID, link0, link1, link2, link3)
-#                    values (%s, %s, %s, %s, %s)"""
-#
-#         cur = data.cursor()
-#         cur.execute(thing, (thing0, thing1, thing2, thing3,))
-#
-#         cur.execute("""select MAX(id) from test""")
-#
-#         value = cur.fetchone()[0]
-#         print(value)
-#         cur.execute(link, (value, link0, link1, link2, link3,))
-#
-#         data.commit()
-#         data.close()
-#     except MySQLdb.IntegrityError as e:
-#         print(e)
-#     except MySQLdb.ProgrammingError as e:
-#         print(e)
-#     except MySQLdb.OperationalError as e:
-#         print(e)
-#     except MySQLdb.DatabaseError as e:
-#         print(e)
-#
-#
-# def restart_test():
-#     try:
-#         data = connect()
-#
-#         linked = """truncate table test_linked"""
-#         test = """truncate table test"""
-#
-#         cur = data.cursor()
-#
-#         cur.execute(linked)
-#         cur.execute(test)
-#
-#         data.commit()
-#         data.close()
-#         print('Reset test')
-#     except MySQLdb.IntegrityError as e:
-#         print(e)
-#     except MySQLdb.ProgrammingError as e:
-#         print(e)
-#     except MySQLdb.OperationalError as e:
-#         print(e)
-#     except MySQLdb.DatabaseError as e:
-#         print(e)
-
-
-# insert_specs_cpu('BX80677I57600K', 1, 'Intel', 'Core i5 7th Gen', 'Core i5-7600K',
-#                  'LGA 1151', 'Kaby Lake', 4, 4, '3.8GHz', '91W')
-# insert_specs_case('case 1', 2, 'case brand', 'case series', 'case mk1',
-#                   2, 2, 3, '8in', '8in', '8in')
-# insert_specs_cooler('cooler 1', 3, 'cooler brand', 'cooler series', 'coolermaster',
-#                     'hsf', 9000, 50)
-# insert_specs_gpu('gpu 1', 4, 'gpu brand', 'gpu series', 'gpu maker',
-#                  '8gb', '9000MHz')
-# insert_specs_motherboard('mobo 1', 5, 'mobo maker', 'mobo series', 'mobo name',
-#                          'lga1155', 'atx', 4, '128gb')
-# insert_specs_psu('psu 1', 6, 'psu person', 'psu series', 'psu name',
-#                  'atx', '90% gold', '1000W', 'mod')
-# insert_specs_ram('ram 1', 7, 'best ram', 'ram series', 'ram name',
-#                  'ddr9000', '9000Mhz', '32gbx4', 30, False)
-# insert_specs_storage('storage 1', 8, 'storage brand', 'storage series', 'storage name',
-#                      '2.5mm', 'ssd', '9000GB', 'None')
-
-# restart_tables()
-# test_insert('t0', 't1', 't2', 't3', 'l0', 'l1', 'l2', 'l3')
-# restart_test()
-# select('test')

@@ -1,36 +1,61 @@
 select * 
-from access_level
-order by accessID asc;
+from access_level;
 
 select * 
-from access_level
-order by accessID desc;
+from forum;
 
 select * 
-from forum
-order by forumID asc;
+from forum;
 
 select * 
-from forum
-order by forumID desc;
+from component_type;
 
 select * 
-from component_type
-order by typeID desc;
+from component;
 
 select * 
-from component c, specs_cpu s
-order by c.model desc;
+from specs_cpu;
+
+select *
+from specs_motherboard;
+
+select *
+from specs_cooler;
+
+select *
+from specs_storage;
+
+select *
+from specs_psu;
+
+select *
+from specs_ram;
+
+select *
+from specs_gpu;
+
+select *
+from specs_case;
+
+-- select *
+-- from specs_cpu, component_type, component
+-- where component.componentType = component_type.typeID
+-- union
+-- select *
+-- from;
 
 select typeID
 from component_type
 where typeName = 'GPU';
 
--- alter table forum add (
--- 	forumTopic varchar(32) not null
--- );
--- 
--- ALTER TABLE forum MODIFY forumName varchar(32) after forumTopic;
+select *
+from component, specs_cpu
+where component.componentType = 1;
+
+
+select *
+from component, specs_storage
+where component.model = specs_storage.model;
 
 create table test (
 	id int(2) not null auto_increment,
@@ -68,8 +93,3 @@ truncate table test;
 
 drop table test_linked;
 drop table test;
-
-truncate table specs_cpu;
-truncate table component;
-
-
