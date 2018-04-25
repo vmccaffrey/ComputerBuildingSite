@@ -136,10 +136,7 @@
   <li class="menu"><a href="http://localhost/ComputerBuildingSite/forum/index.php">Forum</a></li>
   <li style="float:right"><a href="http://localhost/ComputerBuildingSite/layout/pc%20build.html">Computer Builder</a></li>
 </ul>
-        
-        
-        
-      
+     
     <h1>CPUs</h1>
 </div>
 <!-- Table for Components--> 
@@ -151,11 +148,17 @@
     <th>CPU</th>
     <th>Price</th>
     <th>Website</th>
+    <th>Add to Build</th>
   </tr>
   <tr>
+      <td>intel lsdkjf</td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>
+    <form action="../addParts.php" method="get">
+  <input type="submit" value="add">
+</form>
+    </td>
   </tr>
   <tr>
     <td></td>
@@ -192,18 +195,6 @@
     <td></td>
     <td></td>
 </tr>
-
-    
-    <?php
-    $filename = "../../Build.txt"; 
-    $file_content = file($filename); 
-    $x = count($file_content); 
-    $fp = fopen($filename, "w+");  
-    $file_content[2] = "This will change the text in Line 3 of the text file"; 
-    $y = 0; 
-    fwrite($fp, implode($file_content, '')); 
-    fclose($fp); 
-    ?>
     
 
 </table>
