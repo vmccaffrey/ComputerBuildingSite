@@ -1,8 +1,0 @@
-https://ark.intel.com/products/77404/Intel-Pentium-Processor-3550M-2M-Cache-2_30-GHz
-https://ark.intel.com/products/76621/Intel-Pentium-Processor-3556U-2M-Cache-1_70-GHz
-https://ark.intel.com/products/78945/Intel-Pentium-Processor-3558U-2M-Cache-1_70-GHz
-https://ark.intel.com/products/81013/Intel-Pentium-Processor-3560M-2M-Cache-2_40-GHz
-https://ark.intel.com/products/76622/Intel-Pentium-Processor-3560Y-2M-Cache-1_20-GHz
-https://ark.intel.com/products/78946/Intel-Pentium-Processor-3561Y-2M-Cache-1_20-GHz
-https://ark.intel.com/products/84813/Intel-Pentium-Processor-3805U-2M-Cache-1_90-GHz
-https://ark.intel.com/products/86348/Intel-Pentium-Processor-3825U-2M-Cache-1_90-GHz

@@ -1,8 +1,0 @@
-https://ark.intel.com/products/95831/Intel-Xeon-Phi-Processor-7290F-16GB-1_50-GHz-72-core
-https://ark.intel.com/products/95830/Intel-Xeon-Phi-Processor-7290-16GB-1_50-GHz-72-core
-https://ark.intel.com/products/95829/Intel-Xeon-Phi-Processor-7250F-16GB-1_40-GHz-68-core
-https://ark.intel.com/products/94035/Intel-Xeon-Phi-Processor-7250-16GB-1_40-GHz-68-core
-https://ark.intel.com/products/95828/Intel-Xeon-Phi-Processor-7230F-16GB-1_30-GHz-64-core
-https://ark.intel.com/products/94034/Intel-Xeon-Phi-Processor-7230-16GB-1_30-GHz-64-core
-https://ark.intel.com/products/94709/Intel-Xeon-Phi-Processor-7210F-16GB-1_30-GHz-64-core
-https://ark.intel.com/products/94033/Intel-Xeon-Phi-Processor-7210-16GB-1_30-GHz-64-core

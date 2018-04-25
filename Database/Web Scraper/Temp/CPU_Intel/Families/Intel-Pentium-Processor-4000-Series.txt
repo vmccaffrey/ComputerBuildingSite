@@ -1,5 +1,0 @@
-https://ark.intel.com/products/96508/Intel-Pentium-Processor-4415U-2M-Cache-2_30-GHz
-https://ark.intel.com/products/122697/Intel-Pentium-Processor-4415Y-2M-Cache-1_60-GHz
-https://ark.intel.com/products/97140/Intel-Pentium-Processor-4410Y-2M-Cache-1_50-GHz
-https://ark.intel.com/products/89612/Intel-Pentium-Processor-4405Y-2M-Cache-1_50-GHz
-https://ark.intel.com/products/89611/Intel-Pentium-Processor-4405U-2M-Cache-2_10-GHz

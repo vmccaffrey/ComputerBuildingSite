@@ -1,6 +1,0 @@
-https://ark.intel.com/products/78475/Intel-Atom-Processor-E3845-2M-Cache-1_91-GHz
-https://ark.intel.com/products/78478/Intel-Atom-Processor-E3827-1M-Cache-1_75-GHz
-https://ark.intel.com/products/78477/Intel-Atom-Processor-E3826-1M-Cache-1_46-GHz
-https://ark.intel.com/products/78474/Intel-Atom-Processor-E3825-1M-Cache-1_33-GHz
-https://ark.intel.com/products/78476/Intel-Atom-Processor-E3815-512K-Cache-1_46-GHz
-https://ark.intel.com/products/84311/Intel-Atom-Processor-E3805-1M-Cache-1_33-GHz

@@ -1,6 +1,0 @@
-https://ark.intel.com/products/27987/Intel-Itanium-Processor-1_50-GHz-6M-Cache-400-MHz-FSB
-https://ark.intel.com/products/27986/Intel-Itanium-Processor-1_50-GHz-4M-Cache-400-MHz-FSB
-https://ark.intel.com/products/27985/Intel-Itanium-Processor-1_40-GHz-4M-Cache-400-MHz-FSB
-https://ark.intel.com/products/27982/Intel-Itanium-Processor-1_30-GHz-3M-Cache-400-MHz-FSB
-https://ark.intel.com/products/27980/Intel-Itanium-Processor-1_00-GHz-3M-Cache-400-MHz-FSB
-https://ark.intel.com/products/27997/Intel-Itanium-Processor-900-MHz-1_5M-Cache-400-MHz-FSB

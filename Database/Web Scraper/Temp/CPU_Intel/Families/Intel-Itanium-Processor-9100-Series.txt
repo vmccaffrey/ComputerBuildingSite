@@ -1,8 +1,0 @@
-https://ark.intel.com/products/34655/Intel-Itanium-Processor-9152M-24M-Cache-1_66-GHz-667-MHz-FSB
-https://ark.intel.com/products/31796/Intel-Itanium-Processor-9150N-24M-Cache-1_60-GHz-533-MHz-FSB
-https://ark.intel.com/products/31731/Intel-Itanium-Processor-9150M-24M-Cache-1_66-GHz-667-MHz-FSB
-https://ark.intel.com/products/31795/Intel-Itanium-Processor-9140N-18M-Cache-1_60-GHz-533-MHz-FSB
-https://ark.intel.com/products/31794/Intel-Itanium-Processor-9140M-18M-Cache-1_66-GHz-667-MHz-FSB
-https://ark.intel.com/products/31793/Intel-Itanium-Processor-9130M-8M-Cache-1_66-GHz-667-MHz-FSB
-https://ark.intel.com/products/31792/Intel-Itanium-Processor-9120N-12M-Cache-1_42-GHz-533-MHz-FSB
-https://ark.intel.com/products/31791/Intel-Itanium-Processor-9110N-12M-Cache-1_60-GHz-533-MHz-FSB

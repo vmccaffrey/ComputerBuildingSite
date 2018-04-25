@@ -1,5 +1,0 @@
-https://ark.intel.com/products/72016/Intel-Pentium-Processor-2129Y-2M-Cache-1_10-GHz
-https://ark.intel.com/products/75191/Intel-Pentium-Processor-2127U-2M-Cache-1_90-GHz
-https://ark.intel.com/products/71469/Intel-Pentium-Processor-2117U-2M-Cache-1_80-GHz
-https://ark.intel.com/products/72059/Intel-Pentium-Processor-2030M-2M-Cache-2_50-GHz
-https://ark.intel.com/products/71142/Intel-Pentium-Processor-2020M-2M-Cache-2_40-GHz

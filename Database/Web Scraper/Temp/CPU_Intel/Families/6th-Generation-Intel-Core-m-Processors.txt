@@ -1,4 +1,0 @@
-https://ark.intel.com/products/88199/Intel-Core-m7-6Y75-Processor-4M-Cache-up-to-3_10-GHz
-https://ark.intel.com/products/88197/Intel-Core-m5-6Y57-Processor-4M-Cache-up-to-2_80-GHz
-https://ark.intel.com/products/88202/Intel-Core-m5-6Y54-Processor-4M-Cache-up-to-2_70-GHz
-https://ark.intel.com/products/88198/Intel-Core-m3-6Y30-Processor-4M-Cache-up-to-2_20-GHz

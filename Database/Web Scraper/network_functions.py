@@ -1,7 +1,6 @@
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
-from lxml.html import fromstring
 
 
 def simple_get(url):
@@ -41,16 +40,3 @@ def log_error(e):
     make it do anything.
     """
     print(e)
-
-
-def get_proxies():
-    url = 'https://free-proxy-list.net/'
-    response = get(url)
-    parser = fromstring(response.text)
-    proxies = set()
-    for i in parser.xpath('//tbody/tr')[:20]:
-        if i.xpath('.//td[7][contains(text(),"yes")]'):
-            # Grabbing IP and corresponding PORT
-            proxy = ":".join([i.xpath('.//td[1]/text()')[0], i.xpath('.//td[2]/text()')[0]])
-            proxies.add(proxy)
-    return proxies

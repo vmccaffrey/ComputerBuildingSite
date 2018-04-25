@@ -1,3 +1,0 @@
-https://ark.intel.com/products/128690/Intel-Xeon-Phi-Processor-7295-16GB-1_5-GHz-72-Core
-https://ark.intel.com/products/128691/Intel-Xeon-Phi-Processor-7285-16GB-1_3-GHz-68-Core
-https://ark.intel.com/products/128694/Intel-Xeon-Phi-Processor-7235-16GB-1_3-GHz-64-Core

@@ -1,5 +1,0 @@
-https://ark.intel.com/products/43410/Intel-Itanium-Processor-9350-24M-Cache-1_73-GHz-4_80-GTs-Intel-QPI
-https://ark.intel.com/products/43409/Intel-Itanium-Processor-9340-20M-Cache-1_60-GHz-4_80-GTs-Intel-QPI
-https://ark.intel.com/products/42795/Intel-Itanium-Processor-9330-20M-Cache-1_46-GHz-4_80-GTs-Intel-QPI
-https://ark.intel.com/products/43408/Intel-Itanium-Processor-9320-16M-Cache-1_33-GHz-4_80-GTs-Intel-QPI
-https://ark.intel.com/products/43407/Intel-Itanium-Processor-9310-10M-Cache-1_60-GHz-4_80-GTs-Intel-QPI

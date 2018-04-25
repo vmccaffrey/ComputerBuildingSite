@@ -13,21 +13,6 @@ def connect():
         raise
 
 
-# def select(text):
-#     try:
-#         data = connect()
-#
-#         cur = data.cursor()
-#         cur.execute("""select * from %s""" % text)
-#
-#         for row in cur.fetchall():
-#             print(row[0], '\t', row[1])
-#
-#         data.close()
-#     except MySQLdb.DatabaseError as e:
-#         print(e)
-
-
 def get_component_query():
     query = """insert into component (model, componentType, brand, series, componentName)
                 values (%s, %s, %s, %s, %s)"""
@@ -266,7 +251,7 @@ def insert_specs_case(model, component_type, brand, series, component_name,
         print(e)
 
 
-def restart_tables():
+def reset_tables():
     try:
         data = connect()
 

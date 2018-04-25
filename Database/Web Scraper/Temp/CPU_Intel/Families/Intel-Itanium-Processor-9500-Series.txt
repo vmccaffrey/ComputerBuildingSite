@@ -1,4 +1,0 @@
-https://ark.intel.com/products/71699/Intel-Itanium-Processor-9560-32M-Cache-2_53-GHz
-https://ark.intel.com/products/71700/Intel-Itanium-Processor-9550-32M-Cache-2_40-GHz
-https://ark.intel.com/products/71701/Intel-Itanium-Processor-9540-24M-Cache-2_13-GHz
-https://ark.intel.com/products/71702/Intel-Itanium-Processor-9520-20M-Cache-1_73-GHz

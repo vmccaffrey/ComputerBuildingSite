@@ -1,9 +1,0 @@
-https://ark.intel.com/products/96506/Intel-Celeron-Processor-3965U-2M-Cache-2_20-GHz
-https://ark.intel.com/products/122698/Intel-Celeron-Processor-3965Y-2M-Cache-1_50-GHz
-https://ark.intel.com/products/96507/Intel-Celeron-Processor-3865U-2M-Cache-1_80-GHz
-https://ark.intel.com/products/92213/Intel-Celeron-Processor-3955U-2M-Cache-2_00-GHz
-https://ark.intel.com/products/92211/Intel-Celeron-Processor-3855U-2M-Cache-1_60-GHz
-https://ark.intel.com/products/84812/Intel-Celeron-Processor-3765U-2M-Cache-1_90-GHz
-https://ark.intel.com/products/84811/Intel-Celeron-Processor-3755U-2M-Cache-1_70-GHz
-https://ark.intel.com/products/84810/Intel-Celeron-Processor-3215U-2M-Cache-1_70-GHz
-https://ark.intel.com/products/84809/Intel-Celeron-Processor-3205U-2M-Cache-1_50-GHz

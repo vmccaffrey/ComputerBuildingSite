@@ -1,7 +1,0 @@
-https://ark.intel.com/products/84672/Intel-Core-M-5Y71-Processor-4M-Cache-up-to-2_90-GHz
-https://ark.intel.com/products/83612/Intel-Core-M-5Y70-Processor-4M-Cache-up-to-2_60-GHz
-https://ark.intel.com/products/84669/Intel-Core-M-5Y51-Processor-4M-Cache-up-to-2_60-GHz
-https://ark.intel.com/products/84666/Intel-Core-M-5Y31-Processor-4M-Cache-up-to-2_40-GHz
-https://ark.intel.com/products/85234/Intel-Core-M-5Y10c-Processor-4M-Cache-up-to-2_00-GHz
-https://ark.intel.com/products/83611/Intel-Core-M-5Y10a-Processor-4M-Cache-up-to-2_00-GHz
-https://ark.intel.com/products/83610/Intel-Core-M-5Y10-Processor-4M-Cache-up-to-2_00-GHz
