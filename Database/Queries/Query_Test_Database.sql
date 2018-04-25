@@ -57,15 +57,12 @@ from component_type
 where typeName = 'GPU';
 
 SELECT
-    component.brand, component.componentName, component.model, component.series
-    specs_cpu.*
+    specs_cpu.*, component.brand, component.componentName, component.series
 FROM
     component INNER JOIN component_type inner join specs_cpu
-    ON component.componentType = component_type.typeID
+    ON component.componentType = component_type.typeID and component.model = specs_cpu.model
 WHERE
-    (component_type.typeID = 1)
-group by component.model;
-
+    (component_type.typeID = 1);
 
 select *
 from component, specs_storage
