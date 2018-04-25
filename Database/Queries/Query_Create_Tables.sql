@@ -1,17 +1,19 @@
-create table access_level (
-	accessID int(1) not null auto_increment,
-    accessName varchar(32) unique not null,
-    
-    primary key(accessID)
-);
+-- create table access_level (
+-- 	accessID int(1) not null auto_increment,
+--     accessName varchar(32) unique not null,
+--     
+--     primary key(accessID)
+-- );
 
-create table user_account (
-	userID int(16) auto_increment not null,
-    userAccessLevel int(1) references access_level(accessID),
-    userName varchar(64) unique not null,
-    userPassword varchar(255) not null,
+create table `user` (
+	user_id int(16) auto_increment not null,
+    user_name varchar(64) unique not null,
+    user_pass varchar(255) not null,
+    user_email varchar(255) not null,
+    user_date datetime not null,
+    user_level int(8) references access_level(accessID),
     
-    primary key(userID)
+    primary key(user_id)
 );
 
 create table builds (
@@ -30,31 +32,32 @@ create table guides (
     primary key(guideID)
 );
 
-create table forum (
-	forumID int(16) auto_increment not null,
-    forumTopic varchar(32) not null,
-    forumName varchar(64) unique not null,
+create table categories (
+	cat_id int(16) auto_increment not null,
+    cat_name varchar(255) unique not null,
+    cat_description varchar(255) not null,
     
-    primary key (forumID)
+    primary key (cat_id)
 );
 
-create table thread (
-	threadID int(32) auto_increment not null,
-    parentForum int(16) references forum(forumID),
-    threadCreator int(16) references user_account(userID),
-	threadSubject varchar(128) not null,
+create table topics (
+	topic_id int(16) auto_increment not null,
+	topic_subject varchar(255) not null,
+    topic_date datetime not null,
+    topic_cat int(16) references categories(cat_id),
+    topic_by int(16) references `user`(user_id),
     
-	primary key(threadID)
+	primary key(topic_id)
 );
 
-create table post (
-	postID int(32) auto_increment not null,
-    parentThread int(16) references thread(threadID),
-    postCreator int(16) references user_account(userID),
-	postMessage varchar(10000) not null,
-    postDate datetime not null,
+create table posts (
+	post_id int(32) auto_increment not null,
+	post_content text not null,
+    post_date datetime not null,
+    post_topic int(16) references topic(topic_id),
+    post_by int(16) references `user`(user_id),
     
-	primary key(postID)
+	primary key(post_id)
 );
 
 create table component_type (
@@ -99,8 +102,8 @@ create table specs_motherboard (
 create table specs_cooler (
 	model varchar(32) references component(componentModel),
     coolerType varchar(32) not null,
-    fanRPM varchar(32) not null,
-    noiseLevel varchar(32) not null,
+    fanRPM varchar(32),
+    noiseLevel varchar(32),
     
     primary key (model)
 );
@@ -117,7 +120,7 @@ create table specs_storage (
 
 create table specs_psu (
 	model varchar(32) references component(componentModel),
-    dimesions varchar(32),
+    dimensions varchar(32),
     efficiency varchar(32),
     watts varchar(32) not null,
     modular varchar(32) not null,

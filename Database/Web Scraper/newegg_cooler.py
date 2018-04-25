@@ -64,4 +64,4 @@ for link in link_list:
                                  cooler_type, fan_rpm, noise_level)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 3 + 5)

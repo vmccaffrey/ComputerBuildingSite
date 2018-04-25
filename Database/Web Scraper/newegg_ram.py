@@ -70,4 +70,4 @@ for link in link_list:
                               ram_type, speed, capacity, cas_latency, ecc)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 3 + 3)

@@ -5,9 +5,6 @@ select *
 from forum;
 
 select * 
-from forum;
-
-select * 
 from component_type;
 
 select * 
@@ -44,13 +41,30 @@ from specs_case;
 -- select *
 -- from;
 
+select * 
+from component, component_type
+where component_type.typeName = 'CPU' and component_type.typeID = component.componentType;
+
+select * 
+from component
+where component.componentType = 1;
+
+select * 
+from specs_cpu;
+
 select typeID
 from component_type
 where typeName = 'GPU';
 
-select *
-from component, specs_cpu
-where component.componentType = 1;
+SELECT
+    component.brand, component.componentName, component.model, component.series
+    specs_cpu.*
+FROM
+    component INNER JOIN component_type inner join specs_cpu
+    ON component.componentType = component_type.typeID
+WHERE
+    (component_type.typeID = 1)
+group by component.model;
 
 
 select *

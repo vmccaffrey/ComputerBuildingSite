@@ -70,4 +70,4 @@ for link in link_list:
                                bay_hdd, bay_ssd, expansion_slots, dimensions, mobo_compatibility)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 3 + 5)

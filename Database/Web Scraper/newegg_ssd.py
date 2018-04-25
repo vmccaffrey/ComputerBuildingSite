@@ -63,4 +63,4 @@ for link in link_list:
                                   form_factor, storage_type, capacity, storage_cache)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 3 + 3)
