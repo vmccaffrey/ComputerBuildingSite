@@ -1,14 +1,18 @@
     <?php
    
-
-    $filename = "../../Build.txt"; 
-    $file_content = file($filename); 
-    $x = count($file_content); 
-    $fp = fopen($filename, "w+");  
-    $file_content[0] = "This will change : the text in Line 1 : of the text file \n"; 
-    $y = 0; 
-    fwrite($fp, implode($file_content, '')); 
-    fclose($fp); 
+    preg_match_all("/<tr>(.*?)<\/tr>/", $table, $matches);
+    $rows = $matches[1];
+    foreach($rows as $row) {
+        preg_match_all("/<td>(.*?)<\/td>/", $row, $matches);
+        $data[] = $matches[1];
+        }
+    $file = fopen('../..Build.txt', 'w');
+    foreach($data as $row) {
+        $line = implode(",", $row)."\n";
+        fwrite($file, $line, strlen($line));
+        }
+    fclose($file);
+    
     
 
     header("Location: http://localhost/ComputerBuildingSite/layout/pc%20build.html");

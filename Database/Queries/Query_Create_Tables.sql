@@ -1,22 +1,24 @@
-create table access_level (
-	accessID int(1) not null auto_increment,
-    accessName varchar(16) unique not null,
-    
-    primary key(accessID)
-);
+-- create table access_level (
+-- 	accessID int(1) not null auto_increment,
+--     accessName varchar(32) unique not null,
+--     
+--     primary key(accessID)
+-- );
 
-create table user_account (
-	userID int(16) auto_increment not null,
-    userAccessLevel int(1) references access_level(accessID),
-    userName varchar(64) unique not null,
-    userPassword varchar(256) not null,
+create table `user` (
+	user_id int(16) auto_increment not null,
+    user_name varchar(64) unique not null,
+    user_pass varchar(255) not null,
+    user_email varchar(255) not null,
+    user_date datetime not null,
+    user_level int(8) references access_level(accessID),
     
-    primary key(userID)
+    primary key(user_id)
 );
 
 create table builds (
 	buildID int(16) references user_account(userID),
-    buildURL varchar(100) unique not null,
+    buildURL varchar(255) unique not null,
     buildBody text not null,
     
     primary key(buildID)
@@ -24,37 +26,38 @@ create table builds (
 
 create table guides (
 	guideID int(16) references user_account(userID),
-    guideURL varchar(100) unique not null,
+    guideURL varchar(255) unique not null,
     guideBody text not null,
     
     primary key(guideID)
 );
 
-create table forum (
-	forumID int(16) auto_increment not null,
-    forumTopic varchar(32) not null,
-    forumName varchar(64) unique not null,
+create table categories (
+	cat_id int(16) auto_increment not null,
+    cat_name varchar(255) unique not null,
+    cat_description varchar(255) not null,
     
-    primary key (forumID)
+    primary key (cat_id)
 );
 
-create table thread (
-	threadID int(32) auto_increment not null,
-    parentForum int(16) references forum(forumID),
-    threadCreator int(16) references user_account(userID),
-	threadSubject varchar(128) not null,
+create table topics (
+	topic_id int(16) auto_increment not null,
+	topic_subject varchar(255) not null,
+    topic_date datetime not null,
+    topic_cat int(16) references categories(cat_id),
+    topic_by int(16) references `user`(user_id),
     
-	primary key(threadID)
+	primary key(topic_id)
 );
 
-create table post (
-	postID int(32) auto_increment not null,
-    parentThread int(16) references thread(threadID),
-    postCreator int(16) references user_account(userID),
-	postMessage varchar(10000) not null,
-    postDate datetime not null,
+create table posts (
+	post_id int(32) auto_increment not null,
+	post_content text not null,
+    post_date datetime not null,
+    post_topic int(16) references topic(topic_id),
+    post_by int(16) references `user`(user_id),
     
-	primary key(postID)
+	primary key(post_id)
 );
 
 create table component_type (
@@ -76,21 +79,21 @@ create table component (
 
 create table specs_cpu (
 	model varchar(32) references component(componentModel),
-    cpuSocket varchar(16) not null,
-    coreName varchar(16) not null,
-    coreCount int(2) not null,
-    threadCount int(2) not null,
-    speed varchar(8) not null,
-    TDP varchar(4) not null,
+    cpuSocket varchar(32) not null,
+    coreName varchar(32) not null,
+    coreCount varchar(16) not null,
+    threadCount varchar(16) not null,
+    speed varchar(16) not null,
+    TDP varchar(8) not null,
     
     primary key (model)
 );
 
 create table specs_motherboard (
 	model varchar(32) references component(componentModel),
-    cpuSocket varchar(16) not null,
-    formFactor varchar(8) not null,
-    ramSlots int(2) not null,
+    cpuSocket varchar(32) not null,
+    formFactor varchar(32) not null,
+    ramSlots varchar(32) not null,
     maxRAM varchar(8) not null,
     
     primary key (model)
@@ -98,18 +101,18 @@ create table specs_motherboard (
 
 create table specs_cooler (
 	model varchar(32) references component(componentModel),
-    coolerType varchar(16) not null,
-    fanRPM varchar(16) not null,
-    noiseLevel varchar(16) not null,
+    coolerType varchar(32) not null,
+    fanRPM varchar(32),
+    noiseLevel varchar(32),
     
     primary key (model)
 );
 
 create table specs_storage (
 	model varchar(32) references component(componentModel),
-    formFactor varchar(8) not null,
-    storageType varchar(8) not null,
-    capacity varchar(8) not null,
+    formFactor varchar(16) not null,
+    storageType varchar(32),
+    capacity varchar(16) not null,
     storageCache varchar(8),
     
     primary key (model)
@@ -117,10 +120,10 @@ create table specs_storage (
 
 create table specs_psu (
 	model varchar(32) references component(componentModel),
-    formFactor varchar(8) not null,
-    efficiency varchar(16) not null,
-    watts varchar(6) not null,
-    modular varchar(6) not null,
+    dimensions varchar(32),
+    efficiency varchar(32),
+    watts varchar(32) not null,
+    modular varchar(32) not null,
     
     primary key (model)
 );
@@ -129,17 +132,17 @@ create table specs_ram (
 	model varchar(32) references component(componentModel),
     ramType varchar(32) not null,
 	speed varchar(32) not null,
-    capacity varchar(16) not null,
-    casLatency int(2) not null,
-    ecc boolean not null,
+    capacity varchar(32) not null,
+    casLatency varchar(32) not null,
+    ecc varchar(8) not null,
     
     primary key (model)
 );
 
 create table specs_gpu (
 	model varchar(32) references component(componentModel),
-    gpuMemory varchar(4) not null,
-    gpuSpeed varchar(8) not null,
+    gpuMemory varchar(64) not null,
+    gpuSpeed varchar(64) not null,
     
     primary key (model)
 );
@@ -149,9 +152,8 @@ create table specs_case (
     bayHDD varchar(16),
     baySSD varchar(16),
     expansionSlots varchar(8),
-    height varchar(8),
-    width varchar(8),
-    depth varchar(8),
+    dimensions varchar(32),
+    moboCompatibility varchar(64), 
     
     primary key (model)
 );

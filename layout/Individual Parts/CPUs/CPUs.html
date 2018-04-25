@@ -1,11 +1,15 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
-    <head>
-    <style>
+<head>
+	<title>Displaying MySQL Data in HTML Table</title>
+	<style type="text/css">
         
-      
         
-         /*************************************
+        /*************************************
         navigation menu
         **************************************/
        body {margin:0;}
@@ -81,45 +85,88 @@
             box-sizing: border-box;
         }
         
-        /**************************************
-        table for components
-        ***************************************/
-      
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            border: 3px solid #2980B9;
-        }
+        
+		body {
+			font-size: 15px;
+			color: #343d44;
+			font-family: "segoe-ui", "open-sans", tahoma, arial;
+			padding: 0;
+			margin: 0;
+		}
+		table {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+		}
 
-        th, td {
-            text-align: left;
-            padding: 8px;
-        }
+		h1 {
+			margin: 25px auto 0;
+			font-size: 30px;
+		}
 
-        tr:nth-child(even){background-color: #f2f2f2}
+		table td {
+			transition: all .5s;
+		}
+		
+		/* Table */
+		.data-table {
+			border-collapse: collapse;
+			font-size: 14px;
+			min-width: 537px;
+		}
 
-        th {
-            background-color: #2980B9;
-            color: white;
-}
+		.data-table th, 
+		.data-table td {
+			border: 1px solid #e1edff;
+			padding: 7px 17px;
+		}
+		.data-table caption {
+			margin: 7px;
+		}
+
+		/* Table Header */
+		.data-table thead th {
+			background-color: #508abb;
+			color: #FFFFFF;
+			border-color: #6ea1cc !important;
+			text-transform: uppercase;
+		}
+
+		/* Table Body */
+		.data-table tbody td {
+			color: #353535;
+		}
+		.data-table tbody td:first-child,
+		.data-table tbody td:nth-child(4),
+		.data-table tbody td:last-child {
+			text-align: right;
+		}
+
+		.data-table tbody tr:nth-child(odd) td {
+			background-color: #f4fbff;
+		}
+		.data-table tbody tr:hover td {
+			background-color: #ffffa2;
+			border-color: #ffff0f;
+		}
+
+		/* Table Footer */
+		.data-table tfoot th {
+			background-color: #e5f5ff;
+			text-align: right;
+		}
+		.data-table tfoot th:first-child {
+			text-align: left;
+		}
+		.data-table tbody td:empty
+		{
+			background-color: #ffcccc;
+		}
+	</style>
+</head>
+<body>
     
-        
-        
-        /* center the table*/
-        
-        div.table{
-            padding-top: 50px;
-            padding-left: 500px;
-            padding-right: 500px;
-            box-sizing: border-box;
-            
-        }
-
-    </style>
-    </head>
-    <body>
-
-  <!-- Navigation Menu-->
+     <!-- Navigation Menu-->
 
   <div class="header">      
  <ul class="menu">
@@ -139,67 +186,44 @@
      
     <h1>CPUs</h1>
 </div>
-<!-- Table for Components--> 
-        
-<div class="table"> 
     
-<table>
-  <tr>
-    <th>CPU</th>
-    <th>Price</th>
-    <th>Website</th>
-    <th>Add to Build</th>
-  </tr>
-  <tr>
-      <td>intel lsdkjf</td>
-    <td></td>
-    <td></td>
-    <td>
-    <form action="addCPU.php" method="get">
-  <input type="submit" value="add">
-</form>
-    </td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
     
+    
+	
 
-</table>
-        </div>
-        
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Part No</th>
+				<th>Part Name</th>
+                <th>Add to Build</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php
+        include "D:\\xampp\\htdocs\\ComputerBuildingSite\\ComputerBuildingSite\\retrieve_cpu.php";
+		while ($row = mysqli_fetch_row(retrieve_cpu(), MYSQL_NUM))
+		{
+			echo '<tr>
+					<td>$row[1]</td>
+					<td>'.$row[3].'</td>
+					
+				</tr>';
+		} ?> 
 
-    </body>
+            
+            
+            
+        <td><form action="addCPU.php" method="get">
+                    <input type="submit" value="add">
+                    </form></td>
+		</tbody>
+		<tfoot>
+			<tr>
+				
+			</tr>
+		</tfoot>
+	</table>
+</body>
 </html>
+        

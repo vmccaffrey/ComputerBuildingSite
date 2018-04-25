@@ -1,6 +1,6 @@
-ldkfj;laksdjf :a asldkfjl :a;lsdkfj
-ldksfhj : ladskfjlasdjf : l;asdkfjl
-This will change : the text in Line 3 : of the text file 
+This will change : the text in Line 1 : of the text file 
+::
+::
 ::
 ::
 ::
