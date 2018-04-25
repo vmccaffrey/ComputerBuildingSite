@@ -1,7 +1,7 @@
     <?php
    
 
-    $filename = "../Build.txt"; 
+    $filename = "../../Build.txt"; 
     $file_content = file($filename); 
     $x = count($file_content); 
     $fp = fopen($filename, "w+");  
