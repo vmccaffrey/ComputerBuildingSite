@@ -81,4 +81,4 @@ for link in link_list:
                               socket, core_name, core_count, thread_count, speed, tdp)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 7 + 5)

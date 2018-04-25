@@ -63,4 +63,4 @@ for link in link_list:
                               gpu_memory, gpu_speed)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 7 + 5)

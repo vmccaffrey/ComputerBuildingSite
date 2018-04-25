@@ -69,4 +69,4 @@ for link in link_list:
                               dimensions, efficiency, watts, modular)
     else:
         print('Duplicate model found. Skipping.')
-    time.sleep(random.random() * 10 + 5)
+    time.sleep(random.random() * 3 + 3)
