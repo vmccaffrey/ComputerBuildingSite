@@ -193,6 +193,18 @@
     <td></td>
 </tr>
 
+    
+    <?php
+    $filename = "../../Build.txt"; 
+    $file_content = file($filename); 
+    $x = count($file_content); 
+    $fp = fopen($filename, "w+");  
+    $file_content[2] = "This will change the text in Line 3 of the text file"; 
+    $y = 0; 
+    fwrite($fp, implode($file_content, '')); 
+    fclose($fp); 
+    ?>
+    
 
 </table>
         </div>
