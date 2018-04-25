@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_gpu {
+	function retrieve_gpu() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

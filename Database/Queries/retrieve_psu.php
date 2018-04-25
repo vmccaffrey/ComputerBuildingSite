@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_psu {
+	function retrieve_psu() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

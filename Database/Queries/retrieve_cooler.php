@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_cooler {
+	function retrieve_cooler() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

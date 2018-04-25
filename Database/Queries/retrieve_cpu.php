@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_cpu {
+	function retrieve_cpu() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

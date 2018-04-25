@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_storage {
+	function retrieve_storage() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

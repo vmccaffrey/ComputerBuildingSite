@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_ram {
+	function retrieve_ram() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

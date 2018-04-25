@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_mobo {
+	function retrieve_mobo() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,

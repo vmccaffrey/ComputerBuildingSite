@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	function retrieve_case {
+	function retrieve_case() {
 		$sql = "SELECT
 					component.brand,
 					component.componentName,
