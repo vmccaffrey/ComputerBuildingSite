@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -200,20 +196,26 @@
 			</tr>
 		</thead>
 		<tbody>
+		
+		
 		<?php
-        include "D:\\xampp\\htdocs\\ComputerBuildingSite\\ComputerBuildingSite\\retrieve_cpu.php";
-		while ($row = mysqli_fetch_row(retrieve_cpu(), MYSQL_NUM))
-		{
-			echo '<tr>
-					<td>$row[1]</td>
-					<td>'.$row[3].'</td>
-					
-				</tr>';
-		} ?> 
+			include "D:\\xampp\\htdocs\\ComputerBuildingSite\\ComputerBuildingSite\\retrieve_cpu.php";
+			echo '<table>';
+			$result = retrieve_cpu();
+			while ($row = mysqli_fetch_assoc($result, MYSQLI_ASSOC))
+			{
+				$name = $row['component.componentName'];
+				$address = $row['address'];
+				$content = $row['content'];
 
-            
-            
-            
+				echo '<tr>
+						<td>'.$name.'</td>
+						<td>'.$row[3].'</td>
+					</tr>';
+			}
+			echo '</table>';
+		?>
+
         <td><form action="addCPU.php" method="get">
                     <input type="submit" value="add">
                     </form></td>
