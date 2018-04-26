@@ -144,57 +144,38 @@
 </div>
 <!-- Table for Components--> 
         
-<div class="table"> 
-    
-<table>
-  <tr>
-    <th>Power Supplies</th>
-    <th>Price</th>
-    <th>Website</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
+<div class="table">
 
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Model</th>
+            <th>Add to Build</th>
+        </tr>
+        </thead>
 
-</table>
+        <?php
+            include 'C:\xampp\htdocs\ComputerBuildingSite\Database\Queries\retrieve_psu.php';
+
+            $result = retrieve_psu() or die(mysql_error());
+            while ($row = mysqli_fetch_assoc($result))
+            {
+                $name = $row['componentName'];
+                $model = $row['model'];
+
+                echo '<tr>';
+        echo "<td> $name </td>";
+        echo "<td> $model </td>";
+        echo '<td>';
+        echo '<form action="addPSU.php" method="get">';
+            echo '<input type="submit" value="add">';
+            echo '</form>';
+        echo '</td>';
+        echo '</tr>';
+        }
+        ?>
+    </table>
         </div>
         
 

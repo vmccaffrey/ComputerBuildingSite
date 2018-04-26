@@ -106,13 +106,13 @@
         
         
         /* center the table*/
-        
+
         div.table{
             padding-top: 50px;
             padding-left: 500px;
             padding-right: 500px;
             box-sizing: border-box;
-            
+
         }
 
     </style>
@@ -143,59 +143,38 @@
     <h1>Cases</h1>
 </div>
 <!-- Table for Components--> 
-        
-<div class="table"> 
-    
-<table>
-  <tr>
-    <th>Case</th>
-    <th>Price</th>
-    <th>Website</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
 
-</table>
-        </div>
-        
+
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Model</th>
+            <th>Add to Build</th>
+        </tr>
+        </thead>
+
+        <?php
+            include 'C:\xampp\htdocs\ComputerBuildingSite\Database\Queries\retrieve_case.php';
+
+            $result = retrieve_case() or die(mysql_error());
+            while ($row = mysqli_fetch_assoc($result))
+            {
+                $name = $row['componentName'];
+                $model = $row['model'];
+
+                echo '<tr>';
+        echo "<td> $name </td>";
+        echo "<td> $model </td>";
+        echo '<td>';
+        echo '<form action="addCases.php" method="get">';
+            echo '<input type="submit" value="add">';
+            echo '</form>';
+        echo '</td>';
+        echo '</tr>';
+        }
+        ?>
+    </table>
 
     </body>
 </html>

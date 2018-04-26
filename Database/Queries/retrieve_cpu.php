@@ -1,6 +1,4 @@
-<?php
-	include 'connect.php';
-	
+<?php	
 	function retrieve_cpu() {
 		$sql = "SELECT
 					component.brand,
@@ -20,7 +18,7 @@
 				WHERE
 					(component_type.typeID = 1)";
 
-		$result = mysqli_query($con,$sql);
+		$result = mysqli_query(new mysqli('localhost', 'root', '', 'webdev'),$sql);
 		return $result;
 	}
 ?>

@@ -161,70 +161,54 @@
 	</style>
 </head>
 <body>
-    
      <!-- Navigation Menu-->
-
-  <div class="header">      
- <ul class="menu">
-  <li class="menu"><a href="http://localhost/ComputerBuildingSite/layout/pc%20build.html">PC Builder</a></li>
-  <li class="dropdown">
-     <a href="javascript:void(0)" class="dropbtn">Guides</a>
-    <div class="dropdown-content">
-        <a href="../../assembly%20guide/assembly%20guide.html">Assembly Guide</a>
-        <a href="../../Staff%20Build%20Guides/Staff%20Build%20Guides.html">Staff Build Guides</a>
-        <a href="../../Builds/Builds.html">Builds</a>
-    </div>
-</li>
-  <li class="menu"><a class="active" href="../Individual%20Parts.html">Individual Parts</a></li>
-  <li class="menu"><a href="http://localhost/ComputerBuildingSite/forum/index.php">Forum</a></li>
-  <li style="float:right"><a href="http://localhost/ComputerBuildingSite/layout/pc%20build.html">Computer Builder</a></li>
-</ul>
-     
-    <h1>CPUs</h1>
-</div>
-    
-    
-    
-	
+     <div class="header">
+         <ul class="menu">
+             <li class="menu"><a href="http://localhost/ComputerBuildingSite/layout/pc%20build.html">PC Builder</a></li>
+             <li class="dropdown">
+                 <a href="javascript:void(0)" class="dropbtn">Guides</a>
+                 <div class="dropdown-content">
+                     <a href="../../assembly%20guide/assembly%20guide.html">Assembly Guide</a>
+                     <a href="../../Staff%20Build%20Guides/Staff%20Build%20Guides.html">Staff Build Guides</a>
+                     <a href="../../Builds/Builds.html">Builds</a>
+                 </div>
+             </li>
+             <li class="menu"><a class="active" href="../Individual%20Parts.html">Individual Parts</a></li>
+             <li class="menu"><a href="http://localhost/ComputerBuildingSite/forum/index.php">Forum</a></li>
+             <li style="float:right"><a href="http://localhost/ComputerBuildingSite/layout/pc%20build.html">Computer Builder</a></li>
+         </ul>
+         <h1>CPUs</h1>
+     </div>
 
 	<table class="data-table">
 		<thead>
 			<tr>
-				<th>Part No</th>
-				<th>Part Name</th>
+				<th>Name</th>
+				<th>Model</th>
                 <th>Add to Build</th>
 			</tr>
 		</thead>
-		<tbody>
-		
-		
-		<?php
-			include "D:\\xampp\\htdocs\\ComputerBuildingSite\\ComputerBuildingSite\\retrieve_cpu.php";
-			echo '<table>';
-			$result = retrieve_cpu();
-			while ($row = mysqli_fetch_assoc($result, MYSQLI_ASSOC))
-			{
-				$name = $row['component.componentName'];
-				$address = $row['address'];
-				$content = $row['content'];
 
-				echo '<tr>
-						<td>'.$name.'</td>
-						<td>'.$row[3].'</td>
-					</tr>';
-			}
-			echo '</table>';
-		?>
+        <?php
+            include 'C:\xampp\htdocs\ComputerBuildingSite\Database\Queries\retrieve_cpu.php';
 
-        <td><form action="addCPU.php" method="get">
-                    <input type="submit" value="add">
-                    </form></td>
-		</tbody>
-		<tfoot>
-			<tr>
-				
-			</tr>
-		</tfoot>
+            $result = retrieve_cpu() or die(mysql_error());
+            while ($row = mysqli_fetch_assoc($result))
+            {
+                $name = $row['componentName'];
+                $model = $row['model'];
+
+                echo '<tr>';
+                    echo "<td> $name </td>";
+                    echo "<td> $model </td>";
+                    echo '<td>';
+                        echo '<form action="addCPU.php" method="get">';
+                            echo '<input type="submit" value="add">';
+                        echo '</form>';
+                    echo '</td>';
+                echo '</tr>';
+            }
+        ?>
 	</table>
 </body>
 </html>

@@ -1,6 +1,4 @@
 <?php
-	include 'connect.php';
-	
 	function retrieve_ram() {
 		$sql = "SELECT
 					component.brand,
@@ -20,7 +18,7 @@
 				WHERE
 					(component_type.typeID = 6)";
 
-		$result = mysqli_query($con,$sql);
+		$result = mysqli_query(new mysqli('localhost', 'root', '', 'webdev'),$sql);
 		return $result;
 	}
 ?>
